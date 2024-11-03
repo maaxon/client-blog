@@ -16,44 +16,17 @@ import { CategoryItem } from "./category-item/category-item";
 import { CategoryPostItem } from "./category-post-item/category-post-item";
 import styles from "./category-search.module.scss";
 import { CategorySearchProps } from "./category-search.type";
+import { useService } from "@/hooks/use-service/use-service";
+import { useDebounce } from "@/hooks/use-debounce/use-debounce";
 
 export const CategorySearch = ({ category }: CategorySearchProps) => {
-  const [posts, setPosts] = useState<Blog[]>([]);
-  const [loading, setLoading] = useState(true);
   const [tagValue, setTagValue] = useState("");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
-  const [debouncedTagValue, setDebouncedTagValue] = useState(tagValue);
 
   const t = useTranslations("CategoryPage");
+  const debouncedTagValue = useDebounce(tagValue,500)
 
-  useEffect(() => {
-    const handler = setTimeout(() => {
-      setDebouncedTagValue(tagValue);
-    }, 500);
-
-    return () => {
-      clearTimeout(handler);
-    };
-  }, [tagValue]);
-
-  useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        setLoading(true);
-        const fetchedPosts = await getPostsByCategory(
-          category,
-          [...selectedTags, debouncedTagValue]
-        );
-        setPosts(fetchedPosts);
-      } catch (error) {
-        console.error("Failed to load posts: " + error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchPosts();
-  }, [category, selectedTags, debouncedTagValue]);
+  const { data: posts, isLoading } = useService(getPostsByCategory, [category, selectedTags,debouncedTagValue]);
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setTagValue(e.target.value);
@@ -76,16 +49,17 @@ export const CategorySearch = ({ category }: CategorySearchProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.list}>
-        {loading ? (
+        {isLoading &&
           <div className={styles.loaderContainer}>
             <Loader />
           </div>
-        ) : posts.length === 0 ? (
+        }
+        {posts && posts.length === 0 ? (
           <div className={styles.placeholder}>
             <p className={typography.Heading3}>{t("placeholder.message")}</p>
           </div>
         ) : (
-          posts.map(({ id, title_image, title, description, category }) => (
+          posts && posts.map(({ id, title_image, title, description, category }) => (
             <CategoryPostItem
               key={id}
               id={id}
@@ -97,6 +71,7 @@ export const CategorySearch = ({ category }: CategorySearchProps) => {
           ))
         )}
       </div>
+
       <div className={styles.filterPanel}>
         <div className={styles.searchContainer}>
           <FormInput
