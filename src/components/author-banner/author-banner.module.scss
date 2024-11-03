@@ -1,0 +1,126 @@
+@import "@/styles/variables";
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: $lavender;
+  gap: 32px;
+  padding: 128px 20%;
+
+  @media #{map-get($device, laptop)} {
+    padding: 96px 10%;
+    gap: 24px;
+  }
+
+  @media #{map-get($device, tablet)} {
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 8%;
+    gap: 24px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    padding: 48px 5%;
+    gap: 16px;
+  }
+}
+
+.avatarWrapper {
+  position: relative;
+  min-width: 260px;
+  height: 300px;
+
+  @media #{map-get($device, tablet)} {
+    min-width: 200px;
+    height: 240px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    min-width: 160px;
+    height: 200px;
+  }
+
+  @media #{map-get($device, mobile-s)} {
+    min-width: 140px;
+    height: 180px;
+  }
+}
+
+.image {
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+
+  @media #{map-get($device, tablet)} {
+    align-items: center;
+    text-align: center;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    gap: 16px;
+  }
+}
+
+.description {
+  color: $medium-gray;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+
+  @media #{map-get($device, tablet)} {
+    justify-content: center;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    gap: 12px;
+  }
+}
+
+.topBar {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 60%;
+  height: 23px;
+
+  @media #{map-get($device, tablet)} {
+    width: 80%;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    width: 90%;
+  }
+
+  @media #{map-get($device, mobile-s)} {
+    width: 95%;
+  }
+}
+
+.yellowBar {
+  background-color: $yellow;
+  width: 70%;
+
+  @media #{map-get($device, mobile-l)} {
+    width: 65%;
+  }
+}
+
+.purpleBar {
+  background-color: $purple;
+  width: 30%;
+
+  @media #{map-get($device, mobile-l)} {
+    width: 35%;
+  }
+}

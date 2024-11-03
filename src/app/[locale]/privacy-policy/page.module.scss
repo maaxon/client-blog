@@ -1,0 +1,62 @@
+@import "@/styles/typography.module.scss";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.bannerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $lavender;
+  padding: 80px 10%;
+  gap: 4px;
+  text-align: center;
+
+  @media #{map-get($device, tablet)} {
+    padding: 60px 8%;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    padding: 40px 5%;
+  }
+
+  @media #{map-get($device, mobile-s)} {
+    padding: 30px 4%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  padding: 128px 25%;
+  text-align: left;
+
+  @media #{map-get($device, laptop)} {
+    padding: 96px 15%;
+  }
+
+  @media #{map-get($device, tablet)} {
+    padding: 80px 10%;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    padding: 60px 5%;
+  }
+
+  @media #{map-get($device, mobile-s)} {
+    padding: 40px 4%;
+  }
+}
+
+.text {
+  color: $dark-gray;
+}

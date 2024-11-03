@@ -1,0 +1,121 @@
+@import "@/styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin: 0 80px;
+
+  @media #{map-get($device, laptop)} {
+    margin: 0 40px;
+    gap: 32px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    margin: 0 16px;
+    gap: 24px;
+  }
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  @media #{map-get($device, laptop)} {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 20px;
+  padding: 40px 28px;
+  background-color: $light-gray;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+
+  &:hover {
+    background-color: $light-yellow;
+    transform: scale(1.05);
+  }
+
+  @media #{map-get($device, laptop)} {
+    padding: 32px 24px;
+    gap: 16px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    padding: 24px 20px;
+    gap: 12px;
+  }
+}
+
+.avatarWrapper {
+  position: relative;
+  width: 128px;
+  height: 128px;
+
+  @media #{map-get($device, laptop)} {
+    width: 100px;
+    height: 100px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  color: $medium-gray;
+
+  @media #{map-get($device, laptop)} {
+    text-align: center;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    font-size: 12px;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+
+  @media #{map-get($device, laptop)} {
+    gap: 12px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    gap: 8px;
+  }
+}

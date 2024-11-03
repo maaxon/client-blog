@@ -1,0 +1,338 @@
+{
+  "Header": {
+    "title": "Блог клиента Modsen",
+    "video-about-us-button": "Видео про нас",
+    "nav": {
+      "home-link": {
+        "title": "Домой",
+        "href": "/"
+      },
+      "blog-link": {
+        "title": "Блог",
+        "href": "/blog"
+      },
+      "about-us-link": {
+        "title": "Про нас",
+        "href": "/about-us"
+      },
+      "contact-us-link": {
+        "title": "Контакты",
+        "href": "/contact-us"
+      }
+    }
+  },
+
+  "Footer": {
+    "top-title": "Блог клиента Modsen",
+    "middle-title": "Подпишитесь, чтобы получать последние новости",
+    "nav": {
+      "home": {
+        "title": "Домой",
+        "href": "/"
+      },
+      "blog": {
+        "title": "Блог",
+        "href": "/blog"
+      },
+      "about-us": {
+        "title": "Про нас",
+        "href": "/about-us"
+      },
+      "contact-us": {
+        "title": "Контакты",
+        "href": "/contact-us"
+      },
+      "privacy-policy": {
+        "title": "Политика Конфиденциальности",
+        "href": "/privacy-policy"
+      }
+    },
+    "input-placeholder": "Введите свою почту",
+    "button": "Подписаться",
+    "bottom-text-1": "Finstreet 118 2561 Fintown",
+    "bottom-text-2": "Hello@finsweet.com 020 7993 2905",
+    "social-links": {
+      "facebook": {
+        "alt": "Иконка facebook",
+        "href": "https://www.facebook.com"
+      },
+      "twitter": {
+        "alt": "Иконка twitter",
+        "href": "https://x.com/"
+      },
+      "linkedin": {
+        "alt": "Иконка LinkedIn",
+        "href": "https://lt.linkedin.com/"
+      },
+      "instagram": {
+        "alt": "Иконка Instagram",
+        "href": "https://www.instagram.com/"
+      }
+    }
+  },
+
+  "FeaturedIn": {
+    "text-top": "Наши",
+    "text-bottom": "Представители",
+    "logo-1": {
+      "alt": "Лого 1"
+    },
+    "logo-2": {
+      "alt": "Лого 2"
+    },
+    "logo-3": {
+      "alt": "Лого 3"
+    },
+    "logo-4": {
+      "alt": "Лого 4"
+    },
+    "logo-5": {
+      "alt": "Лого 5"
+    }
+  },
+
+  "JoinOurTeam": {
+    "title": "Присоединяйся к нашей команде и стань частью нашей истории",
+    "text": "Безусловно, сплочённость команды профессионалов напрямую зависит от модели развития.",
+    "button": "Присоединиться"
+  },
+
+  "FeaturePost": {
+    "featured-post": "ИЗБРАННЫЙ ПОСТ",
+    "posted-on": "Опубликовано в ",
+    "by": "От ",
+    "separator": " | ",
+    "button": "Читать дальше >",
+    "banner-image": {
+      "alt": "Home banner image"
+    }
+  },
+
+  "AboutUsBanner": {
+    "about-us": {
+      "heading": "ПРО НАС",
+      "title": "Мы — сообщество авторов контента, которые делятся своими знаниями",
+      "description": "Принимая во внимание показатели успешности, высококачественный прототип будущего проекта предопределяет высокую востребованность укрепления моральных ценностей. Как принято считать, независимые государства будут обнародованы.",
+      "link": {
+        "title": "Читать дальше >",
+        "href": "/about-us"
+      }
+    },
+    "our-mission": {
+      "heading": "НАША МИССИЯ",
+      "title": "Создание ценного контента для творческих людей по всему миру",
+      "description": "И нет сомнений, что явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: граница обучения кадров предопределяет высокую востребованность благоприятных перспектив. Как уже неоднократно упомянуто, элементы политического процесса, инициированные исключительно синтетически, призваны к ответу."
+    }
+  },
+
+  "PostsBanner": {
+    "by": "От ",
+    "separator": " | ",
+    "feature-post": {
+      "title": "Избранный пост",
+      "image": {
+        "alt": "Изображение избранного поста"
+      },
+      "button": {
+        "title": "Читать дальше >"
+      }
+    },
+    "all-posts": {
+      "title": "Все посты",
+      "link": {
+        "title": "Открыть блог",
+        "href": "/blog"
+      }
+    },
+    "prev": "< Назад",
+    "next": "Далее >",
+
+    "related-posts-title": "Также читают"
+  },
+
+  "WhyWeStartedBanner": {
+    "header": "Почему мы начали",
+    "title": "Это начиналось как простая идея и превратилось в нашу страсть",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "button": {
+      "title": "Узнай нашу историю >"
+    },
+    "image": {
+      "alt": "Изображение почему мы начали"
+    }
+  },
+
+  "CategorySelector": {
+    "title": "Выберите категорию",
+    "startup": {
+      "title": "Стартап",
+      "description": "Описание для стартапов на русском.",
+      "icon": {
+        "alt": "Иконка категории 'Стартап'"
+      }
+    },
+    "business": {
+      "title": "Бизнес",
+      "description": "Описание для бизнеса на русском.",
+      "icon": {
+        "alt": "Иконка категории 'Бизнес'"
+      }
+    },
+    "economy": {
+      "title": "Экономика",
+      "description": "Описание для экономики на русском.",
+      "icon": {
+        "alt": "Иконка категории 'Экономика'"
+      }
+    },
+    "technology": {
+      "title": "Технологии",
+      "description": "Описание для технологий на русском.",
+      "icon": {
+        "alt": "Иконка категории 'Технологии'"
+      }
+    }
+  },
+
+  "ListOfAuthors": {
+    "title": "Список авторов"
+  },
+
+  "Testimonials": {
+    "header": "отзывы",
+    "title": "Что люди говорят о нашем блоге",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "testimonial-1": {
+      "text": "Контент на этом блоге всегда вдумчивый и хорошо проработанный. Это мой основной источник для того, чтобы быть в курсе событий!",
+      "name": "Сара Томпсон",
+      "location": "Лондон, Великобритания",
+      "avatar": {
+        "alt": "Аватар Сары Томпсон"
+      }
+    },
+    "testimonial-2": {
+      "text": "Мне нравится, как статьи практичны и просты в применении. Они значительно помогли мне улучшить мой распорядок дня.",
+      "name": "Карлос Мендоса",
+      "location": "Мадрид, Испания",
+      "avatar": {
+        "alt": "Аватар Карлоса Мендосы"
+      }
+    },
+    "testimonial-3": {
+      "text": "Замечательное сочетание креативности и полезной информации. Каждый раз ухожу с новыми идеями и вдохновением.",
+      "name": "Эмили Нгуен",
+      "location": "Сидней, Австралия",
+      "avatar": {
+        "alt": "Аватар Эмили Нгуен"
+      }
+    }
+  },
+
+  "AuthorPosts": {
+    "title": "Мои посты",
+    "placeholder": "Здесь будут посты как только автор их опубликует"
+  },
+
+  "CategoryPage": {
+    "tags": {
+      "title": "Все метки",
+      "placeholder": "Искать по метке..."
+    },
+    "categories": {
+      "title": "Категории"
+    },
+    "placeholder": {
+      "message": "Мы не можем ничего найти по вашему запросу. Попробуйте поменять запрос и повторить попытку."
+    }
+  },
+
+  "PrivacyPolicy": {
+    "banner": {
+      "title": "Политика Конфиденциальности",
+      "last-updated": "Последнее обновление: 27 Января 2022 г."
+    },
+    "content": {
+      "section-1": {
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non. Sit amet nulla facilisi morbi tempus iaculis urna. Lorem sed risus ultricies tristique nulla aliquet enim. Volutpat blandit aliquam etiam erat velit. Orci eu lobortis elementum nibh. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam."
+      },
+
+      "section-2": {
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+
+        "description-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non. Sit amet nulla facilisi morbi tempus iaculis urna. Lorem sed risus ultricies tristique nulla aliquet enim. Volutpat blandit aliquam etiam erat velit. Orci eu lobortis elementum nibh. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam.",
+
+        "description-2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non. Sit amet nulla facilisi morbi tempus iaculis urna. Lorem sed risus ultricies tristique nulla aliquet enim. Volutpat blandit aliquam etiam erat velit. Orci eu lobortis elementum nibh. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam."
+      }
+    }
+  },
+
+  "AboutUsPage": {
+    "banner": {
+      "header": {
+        "heading": "О нас",
+        "title": "Мы — команда авторов контента, которые делятся своими знаниями",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      }
+    },
+    "statistics": {
+      "blogsPublished": "Опубликовано блогов",
+      "viewsOnFinsweet": "Просмотры на Finsweet",
+      "totalActiveUsers": "Всего активных пользователей"
+    },
+    "missionVision": {
+      "mission": {
+        "heading": "Наша миссия",
+        "title": "Создавать ценный контент для творческих людей по всему миру",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+      },
+      "vision": {
+        "heading": "Наше видение",
+        "title": "Платформа, которая помогает людям совершенствоваться",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+      }
+    },
+    "content": {
+      "ourTeamTitle": "Наша команда творческих людей",
+      "ourTeamSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "ourTeamDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
+      "whyWeStartedTitle": "Почему мы начали этот блог",
+      "whyWeStartedSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "whyWeStartedDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+    }
+  },
+
+  "ContactUsPage": {
+    "header": {
+      "header": "Свяжитесь с нами",
+      "title": "Давайте начнем разговор"
+    },
+    "workingHours": {
+      "header": "Рабочие часы",
+      "content": {
+        "days": "С понедельника по пятницу",
+        "hours": "с 9:00 до 20:00",
+        "supportInfo": "Наша служба поддержки работает круглосуточно"
+      }
+    },
+    "contactUs": {
+      "header": "Контакты",
+      "content": {
+        "phone": "020 7993 2905",
+        "email": "hello@finsweet.com"
+      }
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+
+    "input": {
+      "placeholder": {
+        "name": "Ваше имя",
+        "email": "Ваш Email",
+        "message": "Ваше сообщение"
+      }
+    },
+    "button": {
+      "title": "Отправить сообщение"
+    }
+  }
+}

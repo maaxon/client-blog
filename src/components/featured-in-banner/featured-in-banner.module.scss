@@ -1,0 +1,77 @@
+@import "@/styles/variables";
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 80px;
+  padding: 20px 0;
+
+  gap: 16px;
+
+  @media #{map-get($device, mobile-l)} {
+    flex-direction: column;
+    margin: 0 16px;
+  }
+
+  @media #{map-get($device, tablet)} {
+    justify-content: center;
+    margin: 0 40px;
+  }
+
+  @media #{map-get($device, laptop)} {
+    margin: 0 60px;
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: $medium-gray;
+
+  @media #{map-get($device, mobile-l)} {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+.textTop {
+  opacity: 0.6;
+  margin-bottom: 8px;
+
+  @media #{map-get($device, mobile-l)} {
+    margin-bottom: 4px;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media #{map-get($device, mobile-l)} {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  @media #{map-get($device, tablet)} {
+    gap: 16px;
+  }
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+
+  @media #{map-get($device, mobile-l)} {
+    max-width: 80px;
+  }
+
+  @media #{map-get($device, tablet)} {
+    max-width: 90px;
+  }
+}

@@ -1,0 +1,124 @@
+@import "@/styles/variables";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  gap: 64px;
+  padding-top: 128px;
+
+  @media #{map-get($device, tablet)} {
+    gap: 48px;
+    padding-top: 96px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    gap: 32px;
+    padding-top: 64px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 25%;
+  text-align: center;
+
+  @media #{map-get($device, tablet)} {
+    margin: 0 15%;
+    gap: 10px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    margin: 0 10%;
+    gap: 8px;
+  }
+
+  @media #{map-get($device, mobile-s)} {
+    margin: 0 5%;
+    gap: 6px;
+  }
+}
+
+.headerDescription {
+  color: $medium-gray;
+}
+
+.informationContainer {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 70px;
+  padding: 64px 48px;
+  margin: 0 25%;
+  background-color: $purple;
+  color: $light;
+
+  @media #{map-get($device, tablet)} {
+    margin: 0 15%;
+    padding: 48px 32px;
+    gap: 50px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    flex-direction: column;
+    margin: 0 10%;
+    padding: 32px 24px;
+    gap: 30px;
+  }
+
+  @media #{map-get($device, mobile-s)} {
+    margin: 0 5%;
+    padding: 24px 16px;
+    gap: 20px;
+  }
+}
+
+.information {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  flex: 1;
+
+  @media #{map-get($device, mobile-l)} {
+    gap: 12px;
+  }
+
+  @media #{map-get($device, mobile-s)} {
+    gap: 10px;
+  }
+}
+
+.informationContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.informationHeader {
+  width: 100%;
+  border-bottom: 1px solid rgba($light, 0.1);
+  padding-bottom: 16px;
+
+  @media #{map-get($device, mobile-l)} {
+    padding-bottom: 12px;
+  }
+
+  @media #{map-get($device, mobile-s)} {
+    padding-bottom: 10px;
+  }
+}
+
+.lightText {
+  opacity: 0.6;
+}

@@ -1,0 +1,148 @@
+@import "@/styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  margin: 0 80px;
+
+  @media #{map-get($device, laptop)} {
+    margin: 0 60px;
+  }
+
+  @media #{map-get($device, tablet)} {
+    margin: 0 40px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    margin: 0 20px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 34px;
+  max-width: 800px;
+
+  @media #{map-get($device, mobile-l)} {
+    gap: 24px;
+  }
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+
+  @media #{map-get($device, tablet)} {
+    gap: 20px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    gap: 16px;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+
+  @media #{map-get($device, mobile-l)} {
+    gap: 12px;
+  }
+}
+
+.profileText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.avatarWrapper {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  @media #{map-get($device, mobile-l)} {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.avatar {
+  object-fit: cover;
+}
+
+.authorName {
+  color: $purple;
+  opacity: 0.87;
+}
+
+.publishDate {
+  color: $medium-gray;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: capitalize;
+
+  @media #{map-get($device, mobile-l)} {
+    gap: 6px;
+  }
+}
+
+.categoryIconWrapper {
+  position: relative;
+  width: 24px;
+  height: 24px;
+
+  @media #{map-get($device, mobile-l)} {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.titleImageWrapper {
+  width: 100%;
+  height: 580px;
+  position: relative;
+
+  @media #{map-get($device, tablet)} {
+    height: 400px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    height: 280px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: 900px;
+
+  @media #{map-get($device, tablet)} {
+    gap: 20px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    gap: 16px;
+  }
+}

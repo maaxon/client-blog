@@ -1,0 +1,339 @@
+{
+  "Header": {
+    "title": "Modsen Client Blog",
+    "video-about-us-button": "Video about us",
+    "nav": {
+      "home-link": {
+        "title": "Home",
+        "href": "/"
+      },
+      "blog-link": {
+        "title": "Blog",
+        "href": "/blog"
+      },
+      "about-us-link": {
+        "title": "About us",
+        "href": "/about-us"
+      },
+      "contact-us-link": {
+        "title": "Contact us",
+        "href": "/contact-us"
+      }
+    }
+  },
+
+  "Footer": {
+    "top-title": "Modsen Client Blog",
+    "middle-title": "Subscribe to our news letter to get latest updates and news",
+    "nav": {
+      "home": {
+        "title": "Home",
+        "href": "/"
+      },
+      "blog": {
+        "title": "Blog",
+        "href": "/blog"
+      },
+      "about-us": {
+        "title": "About us",
+        "href": "/about-us"
+      },
+      "contact-us": {
+        "title": "Contact us",
+        "href": "/contact-us"
+      },
+      "privacy-policy": {
+        "title": "Privacy Policy",
+        "href": "/privacy-policy"
+      }
+    },
+    "input-placeholder": "Enter Your Email",
+    "button": "Subscribe",
+    "bottom-text-1": "Finstreet 118 2561 Fintown",
+    "bottom-text-2": "Hello@finsweet.com 020 7993 2905",
+    "social-links": {
+      "facebook": {
+        "alt": "Facebook icon",
+        "href": "https://www.facebook.com"
+      },
+      "twitter": {
+        "alt": "Twitter icon",
+        "href": "https://x.com/"
+      },
+      "linkedin": {
+        "alt": "LinkedIn icon",
+        "href": "https://lt.linkedin.com/"
+      },
+      "instagram": {
+        "alt": "Instagram icon",
+        "href": "https://www.instagram.com/"
+      }
+    }
+  },
+
+  "FeaturedIn": {
+    "text-top": "We are",
+    "text-bottom": "Featured in",
+    "logo-1": {
+      "alt": "Лого 1"
+    },
+    "logo-2": {
+      "alt": "Лого 2"
+    },
+    "logo-3": {
+      "alt": "Лого 3"
+    },
+    "logo-4": {
+      "alt": "Лого 4"
+    },
+    "logo-5": {
+      "alt": "Лого 5"
+    }
+  },
+
+  "JoinOurTeam": {
+    "title": "Join our team to be a part of our story",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "button": "Join now"
+  },
+
+  "FeaturePost": {
+    "featured-post": "FEATURED POST",
+    "posted-on": "Posted on ",
+    "by": "By ",
+    "separator": " | ",
+    "button": "Read more >",
+    "banner-image": {
+      "alt": "Home banner image"
+    }
+  },
+
+  "AboutUsBanner": {
+    "about-us": {
+      "heading": "ABOUT US",
+      "title": "We are a community of content writers who share their learnings",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "link": {
+        "title": "Read More >",
+        "href": "/about-us"
+      }
+    },
+    "our-mission": {
+      "heading": "OUR MISSION",
+      "title": "Creating valuable content for creatives all around the world",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  },
+
+  "PostsBanner": {
+    "by": "By ",
+    "separator": " | ",
+    "feature-post": {
+      "title": "Featured post",
+      "image": {
+        "alt": "Featured post image"
+      },
+      "button": {
+        "title": "Read more >"
+      }
+    },
+    "all-posts": {
+      "title": "All posts",
+      "image": {
+        "alt": "Post image "
+      },
+      "link": {
+        "title": "View posts",
+        "href": "/blog"
+      }
+    },
+    "prev": "< Prev",
+    "next": "Next >",
+
+    "related-posts-title": "What to read next"
+  },
+
+  "WhyWeStartedBanner": {
+    "header": "Why We Started",
+    "title": "It started out as a simple idea and evolved into our passion",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "button": {
+      "title": "Discover out story >"
+    },
+    "image": {
+      "alt": "Why we started image"
+    }
+  },
+
+  "CategorySelector": {
+    "title": "Choose A Category",
+    "startup": {
+      "title": "Startup",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      "icon": {
+        "alt": "Startup icon"
+      }
+    },
+    "business": {
+      "title": "Business",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      "icon": {
+        "alt": "Business icon"
+      }
+    },
+    "economy": {
+      "title": "Economy",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      "icon": {
+        "alt": "Economy icon"
+      }
+    },
+    "technology": {
+      "title": "Technology",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      "icon": {
+        "alt": "Technology icon"
+      }
+    }
+  },
+
+  "ListOfAuthors": {
+    "title": "List of Authors"
+  },
+
+  "Testimonials": {
+    "header": "testimonials",
+    "title": "What people say about our blog",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "testimonial-1": {
+      "text": "The content on this blog is insightful and always well-researched. It's my go-to for staying informed!",
+      "name": "Sarah Thompson",
+      "location": "London, UK",
+      "avatar": {
+        "alt": "Sarah Thompson's avatar"
+      }
+    },
+    "testimonial-2": {
+      "text": "I love how practical and easy-to-follow the articles are. They've helped me improve my daily routine significantly.",
+      "name": "Carlos Mendoza",
+      "location": "Madrid, Spain",
+      "avatar": {
+        "alt": "Carlos Mendoza's avatar"
+      }
+    },
+    "testimonial-3": {
+      "text": "A wonderful mix of creativity and useful information. I always leave with new ideas and inspiration.",
+      "name": "Emily Nguyen",
+      "location": "Sydney, Australia",
+      "avatar": {
+        "alt": "Emily Nguyen's avatar"
+      }
+    }
+  },
+
+  "AuthorPosts": {
+    "title": "My posts",
+    "placeholder": "There will be posts here as soon as the author publishes them."
+  },
+
+  "CategoryPage": {
+    "tags": {
+      "title": "All tags",
+      "placeholder": "Search for tag..."
+    },
+    "categories": {
+      "title": "Categories"
+    },
+    "placeholder": {
+      "message": "We can't find anything matching your request. Try changing your request and try again."
+    }
+  },
+
+  "PrivacyPolicy": {
+    "banner": {
+      "title": "Privacy Policy",
+      "last-updated": "Last Updated on 27th January 2022"
+    },
+    "content": {
+      "section-1": {
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non. Sit amet nulla facilisi morbi tempus iaculis urna. Lorem sed risus ultricies tristique nulla aliquet enim. Volutpat blandit aliquam etiam erat velit. Orci eu lobortis elementum nibh. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam."
+      },
+
+      "section-2": {
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "description-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non. Sit amet nulla facilisi morbi tempus iaculis urna. Lorem sed risus ultricies tristique nulla aliquet enim. Volutpat blandit aliquam etiam erat velit. Orci eu lobortis elementum nibh. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam.",
+
+        "description-2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non. Sit amet nulla facilisi morbi tempus iaculis urna. Lorem sed risus ultricies tristique nulla aliquet enim. Volutpat blandit aliquam etiam erat velit. Orci eu lobortis elementum nibh. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam."
+      }
+    }
+  },
+
+  "AboutUsPage": {
+    "banner": {
+      "header": {
+        "heading": "About us",
+        "title": "We are a team of content writers who share their learnings",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      }
+    },
+    "statistics": {
+      "blogsPublished": "Blogs Published",
+      "viewsOnFinsweet": "Views on Finsweet",
+      "totalActiveUsers": "Total active Users"
+    },
+    "missionVision": {
+      "mission": {
+        "heading": "Our mission",
+        "title": "Creating valuable content for creatives all around the world",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+      },
+      "vision": {
+        "heading": "Our Vision",
+        "title": "A platform that empowers individuals to improve",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+      }
+    },
+    "content": {
+      "ourTeamTitle": "Our team of creatives",
+      "ourTeamSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "ourTeamDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
+      "whyWeStartedTitle": "Why we started this Blog",
+      "whyWeStartedSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "whyWeStartedDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+    }
+  },
+
+  "ContactUsPage": {
+    "header": {
+      "header": "Contact us",
+      "title": "Let’s Start a Conversation"
+    },
+    "workingHours": {
+      "header": "Working hours",
+      "content": {
+        "days": "Monday To Friday",
+        "hours": "9:00 AM to 8:00 PM",
+        "supportInfo": "Our Support Team is available 24/7"
+      }
+    },
+    "contactUs": {
+      "header": "Contact us",
+      "content": {
+        "phone": "020 7993 2905",
+        "email": "hello@finsweet.com"
+      }
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+    "input": {
+      "placeholder": {
+        "name": "Your Name",
+        "email": "Your Email",
+        "message": "Your Message"
+      }
+    },
+    "button": {
+      "title": "Send message"
+    }
+  }
+}

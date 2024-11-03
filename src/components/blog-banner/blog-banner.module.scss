@@ -1,0 +1,47 @@
+@import "@/styles/variables";
+
+.container{
+  background-color: $lavender;
+  padding: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15vw;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .author{
+    color: $purple;
+  }
+
+  .title{
+    padding: 8px 0;
+  }
+
+  .button{
+    max-width: 260px;
+  }
+}
+
+
+
+
+
+.imageContainer {
+  position: relative;
+  height: 360px;
+}
+
+.metaInfo{
+  color: $dark-gray;
+}
+
+
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}

@@ -1,0 +1,11 @@
+@import "@/styles/variables";
+
+.container{
+  margin: 40px 80px;
+
+  .title{
+    color: $black;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $medium-gray;
+  }
+}

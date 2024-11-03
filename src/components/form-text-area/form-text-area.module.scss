@@ -1,0 +1,25 @@
+@import "@/styles/variables";
+
+.textarea {
+  width: 100%;
+  padding: 14px 24px;
+  border: 1px solid $dark-gray;
+  background-color: inherit;
+  color: $light;
+  resize: none;
+  overflow: hidden;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+
+  &::placeholder {
+    color: $dark-gray;
+  }
+
+  &:focus {
+    border-color: $medium-gray;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+  }
+}
