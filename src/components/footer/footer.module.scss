@@ -1,0 +1,61 @@
+@import "@/styles/variables";
+
+.footer {
+  background-color: $black;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
+  color: $light;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.middleSection {
+  background-color: $dark-blue;
+  padding: 80px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .inputContainer{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+.bottomContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .textGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .text {
+    color: $medium-gray;
+  }
+
+  .socialNetworkContainer {
+    display: flex;
+    gap: 26px;
+  }
+}
