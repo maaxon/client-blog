@@ -19,7 +19,7 @@ export function PostList() {
 
   return (
     <section className={styles.container}>
-      {posts.map(({ id, title, title_image, description, category }) =>
+      {posts && posts.map(({ id, title, title_image, description, category }) =>
         <PostCard key={id} id={id} title={title} description={description} image={title_image} category={category} />)}
       <section className={styles.pagination}>
         <button

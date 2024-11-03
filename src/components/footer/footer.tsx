@@ -13,6 +13,7 @@ import LinkedInIcon from "@public/icons/social-networks/linked-in-icon.svg";
 import TwitterIcon from "@public/icons/social-networks/twitter-icon.svg";
 
 import styles from "./footer.module.scss";
+import classNames from "classnames";
 
 export const Footer = () => {
   const t = useTranslations("Footer");
@@ -36,7 +37,7 @@ export const Footer = () => {
         </nav>
       </section>
       <section className={styles.middleSection}>
-        <h2 className={`${typography.Heading2} ${styles.title}`}>
+        <h2 className={classNames(typography.Heading2,styles.title)}>
           {t("middle-title")}
         </h2>
         <form className={styles.inputContainer}>

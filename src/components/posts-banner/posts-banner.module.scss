@@ -1,13 +1,13 @@
 @import "@/styles/variables";
 
 .container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   gap: 32px;
   margin: 0 80px;
 
-  @media #{map-get($device, laptop)} {
+  @media #{map-get($device, tablet)} {
+    display: flex;
     flex-direction: column;
     gap: 16px;
     margin: 0 40px;
@@ -15,6 +15,46 @@
 
   @media #{map-get($device, mobile-l)} {
     margin: 0 24px;
+  }
+}
+
+
+.featuredContainer,
+.allContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  flex-grow: 1;
+}
+
+.featuredPost {
+  width: 100%;
+  padding: 32px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 1px solid $light-gray;
+  flex-grow: 1;
+
+  @media #{map-get($device, mobile-l)} {
+    padding: 24px;
+    gap: 16px;
+  }
+}
+
+.allPosts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-grow: 1;
+
+  @media #{map-get($device, mobile-l)} {
+    gap: 16px;
   }
 }
 
@@ -107,63 +147,5 @@
 
   @media #{map-get($device, mobile-m)} {
     padding: 16px;
-  }
-}
-
-@import "@/styles/variables";
-
-.container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 32px;
-  margin: 0 80px;
-
-  @media #{map-get($device, tablet)} {
-    flex-direction: column;
-    gap: 16px;
-    margin: 0 40px;
-  }
-
-  @media #{map-get($device, mobile-l)} {
-    margin: 0 24px;
-  }
-}
-
-.featuredContainer,
-.allContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 32px;
-  flex-grow: 1;
-}
-
-.featuredPost {
-  width: 100%;
-  padding: 32px;
-  gap: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border: 1px solid $light-gray;
-  flex-grow: 1;
-
-  @media #{map-get($device, mobile-l)} {
-    padding: 24px;
-    gap: 16px;
-  }
-}
-
-.allPosts {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  flex-grow: 1;
-
-  @media #{map-get($device, mobile-l)} {
-    gap: 16px;
   }
 }
