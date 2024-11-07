@@ -24,6 +24,7 @@ export const ContactForm = () => {
     formState: { errors },
   } = useForm<ContactFormData>({
     resolver: zodResolver(schema),
+    mode:"onChange"
   });
 
   const onSubmit = (data: ContactFormData) => {

@@ -1,0 +1,40 @@
+@import "@/styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $lavender;
+  padding: 80px 35%;
+  gap: 32px;
+  text-align: center;
+
+  @media #{map-get($device, laptop)} {
+    padding: 60px 20%;
+    gap: 28px;
+  }
+
+  @media #{map-get($device, tablet)} {
+    padding: 48px 15%;
+    gap: 24px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    padding: 40px 10%;
+    gap: 20px;
+  }
+
+  @media #{map-get($device, mobile-s)} {
+    padding: 32px 5%;
+    gap: 16px;
+  }
+}
+
+.title {
+  text-transform: capitalize;
+}
+
+.description {
+  color: $medium-gray;
+}

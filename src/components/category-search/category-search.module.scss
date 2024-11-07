@@ -1,0 +1,164 @@
+@import "@/styles/variables";
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 148px;
+  margin: 0 80px;
+
+  @media #{map-get($device, large-desktop)} {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 60px;
+    margin: 0 20px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    gap: 40px;
+    margin: 0 16px;
+  }
+
+  @media #{map-get($device, mobile-s)} {
+    margin: 0 8px;
+  }
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+
+  @media #{map-get($device, large-desktop)} {
+    align-items: center;
+  }
+}
+
+.filterPanel {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 58px;
+
+  @media #{map-get($device, large-desktop)} {
+    width: 100%;
+    gap: 40px;
+  }
+}
+
+.searchContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.search {
+  color: $black;
+}
+
+.categoryContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.categoryList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+
+  @media #{map-get($device, large-desktop)} {
+    align-items: center;
+  }
+}
+
+.loaderContainer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tagList {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tagItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 2px solid $medium-gray;
+  border-radius: 25px;
+  background-color: inherit;
+  opacity: 0.7;
+  cursor: pointer;
+  flex-grow: 1;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $light-gray;
+  }
+
+  @media #{map-get($device, large-desktop)} {
+    padding: 8px 16px;
+  }
+
+  @media #{map-get($device, mobile-l)} {
+    padding: 6px 12px;
+  }
+}
+
+.selectedTag {
+  background-color: $yellow;
+  border-color: $yellow;
+  opacity: 1;
+
+  &:hover {
+    background-color: $dark-yellow;
+    border-color: $dark-yellow;
+  }
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  height: 100%;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+
+  @media #{map-get($device, mobile-l)} {
+    padding: 20px 10px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

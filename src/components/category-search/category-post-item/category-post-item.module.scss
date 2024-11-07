@@ -1,0 +1,59 @@
+@import "@/styles/variables";
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 318px;
+
+  gap: 32px;
+
+  padding: 32px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+
+  &:hover {
+    background-color: $light-yellow;
+    transform: scale(1.05);
+  }
+}
+
+.imageWrapper {
+  flex: 1;
+  height: 100%;
+  position: relative;
+
+  @media #{map-get($device, laptop)} {
+    display: none;
+  }
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.content {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  gap: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  gap: 16px;
+}

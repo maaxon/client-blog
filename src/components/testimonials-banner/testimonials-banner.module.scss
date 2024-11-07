@@ -125,7 +125,7 @@
     right: 10px;
 
     @media #{map-get($device, mobile-l)} {
-      bottom: -40px;
+      bottom: 2px;
     }
 
     .controlBtn {
@@ -180,12 +180,12 @@
   .carousel {
     .slides {
       display: flex;
-      flex-direction: column;
     }
 
     .slide {
       align-items: center;
       gap: 16px;
+      padding-bottom: 70px;
 
       .userInfo {
         flex-direction: column;
