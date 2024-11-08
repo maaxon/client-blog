@@ -1,4 +1,4 @@
-import { Category } from "@interfaces/category.interface";
+import { Category } from "@/types";
 
 export type CategorySearchProps = {
   category: Category;
