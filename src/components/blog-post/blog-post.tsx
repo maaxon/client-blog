@@ -6,8 +6,8 @@ import { NavLink } from "@/components/nav-link/nav-link";
 import { categories } from "@/constants/categories.constant";
 import { blockType } from "@/constants/text-block.constant";
 import { getPostById } from "@/services/posts/get-post-by-id";
-import { formattedDate } from "@/utils/format-date";
 import typography from "@/styles/typography.module.scss";
+import { formattedDate } from "@/utils/format-date";
 
 import styles from "./blog-post.module.scss";
 import { BlogPostProps } from "./blog-post.types";
@@ -41,7 +41,7 @@ export const BlogPost = async ({ id }: BlogPostProps) => {
               </p>
             </div>
           </div>
-          <h1 className={typography.Heading1}>{post.title}</h1>
+          <h1 className={typography.Heading1} data-testid="blog-post-title">{post.title}</h1>
         </div>
         <div className={styles.category}>
           <div className={styles.categoryIconWrapper}>

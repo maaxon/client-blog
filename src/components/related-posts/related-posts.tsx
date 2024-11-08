@@ -4,8 +4,8 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { NavLink } from "@/components/nav-link/nav-link";
 import { Link } from "@/i18n/routing";
 import { getRelatedPosts } from "@/services/posts/get-related-posts";
-import { formattedDate } from "@/utils/format-date";
 import typography from "@/styles/typography.module.scss";
+import { formattedDate } from "@/utils/format-date";
 
 import styles from "./related-posts.module.scss";
 import { RelatedPostsProps } from "./related-posts.type";

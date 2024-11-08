@@ -4,12 +4,12 @@ import classNames from "classnames";
 
 import { JoinOurTeamBanner } from "@/components/join-our-team-banner/join-our-team-banner";
 import { ListOfAuthors } from "@/components/list-of-authors/list-of-authors";
+import typography from "@/styles/typography.module.scss";
 import PurpleShape from "@public/icons/shapes/purple-shape.svg";
 import YellowShape from "@public/icons/shapes/yellow-shape.svg";
 import ContentImage1 from "@public/images/about-us-1-image.png";
 import ContentImage2 from "@public/images/about-us-2-image.png";
 import BannerImage from "@public/images/why-we-started-image.png";
-import typography from "@/styles/typography.module.scss";
 
 import styles from "./page.module.scss";
 

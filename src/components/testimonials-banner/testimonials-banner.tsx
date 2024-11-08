@@ -39,7 +39,7 @@ export const TestimonialsBanner = () => {
                   />
                 </div>
                 <div>
-                  <h3 className={typography.Heading4}>
+                  <h3 className={typography.Heading4} data-testid={`testimonial-name`}>
                     {t(`${testimonial}.name`)}
                   </h3>
                   <p className={`${typography.body1} ${styles.location}`}>
@@ -59,6 +59,7 @@ export const TestimonialsBanner = () => {
             {PREV_SYMBOL}
           </button>
           <button
+            data-testid="next-slide"
             className={`${styles.nextBtn} ${styles.controlBtn}`}
             onClick={nextSlide}
           >

@@ -1,6 +1,6 @@
 "use client";
 
-import { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { useTranslations } from "next-intl";
 import classNames from "classnames";
 
@@ -8,16 +8,15 @@ import { FormInput } from "@/components/form-input/form-input";
 import { Loader } from "@/components/loader/loader";
 import { categories } from "@/constants/categories.constant";
 import { tags } from "@/constants/tags.constatn";
+import { useDebounce } from "@/hooks/use-debounce/use-debounce";
+import { useService } from "@/hooks/use-service/use-service";
 import { getPostsByCategory } from "@/services/posts/get-posts-by-category";
 import typography from "@/styles/typography.module.scss";
-import { Blog } from "@/types";
 
 import { CategoryItem } from "./category-item/category-item";
 import { CategoryPostItem } from "./category-post-item/category-post-item";
 import styles from "./category-search.module.scss";
 import { CategorySearchProps } from "./category-search.type";
-import { useService } from "@/hooks/use-service/use-service";
-import { useDebounce } from "@/hooks/use-debounce/use-debounce";
 
 export const CategorySearch = ({ category }: CategorySearchProps) => {
   const [tagValue, setTagValue] = useState("");

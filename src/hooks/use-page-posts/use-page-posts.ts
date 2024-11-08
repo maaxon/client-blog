@@ -7,7 +7,6 @@ import { getPostsByPage } from "@/services/posts/get-posts-by-page";
 
 import { START_PAGE } from "./config";
 
-//TODO split pagination and data fetching
 
 export const usePagePosts = () => {
   const [page, setPage] = useState(START_PAGE);

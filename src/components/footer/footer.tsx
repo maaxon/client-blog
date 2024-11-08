@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import classNames from "classnames";
 
 import { Button } from "@/components/button/button";
 import { FormInput } from "@/components/form-input/form-input";
@@ -13,7 +14,6 @@ import LinkedInIcon from "@public/icons/social-networks/linked-in-icon.svg";
 import TwitterIcon from "@public/icons/social-networks/twitter-icon.svg";
 
 import styles from "./footer.module.scss";
-import classNames from "classnames";
 
 export const Footer = () => {
   const t = useTranslations("Footer");

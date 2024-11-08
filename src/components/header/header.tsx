@@ -7,8 +7,8 @@ import { Button } from "@/components/button/button";
 import { Modal } from "@/components/modal/modal";
 import { NavLink } from "@/components/nav-link/nav-link";
 import { useModalOpen } from "@/hooks/use-modal-open/use-modal-open";
-import { Video } from "@public/video";
 import typography from "@/styles/typography.module.scss";
+import { Video } from "@public/video";
 
 import styles from "./header.module.scss";
 

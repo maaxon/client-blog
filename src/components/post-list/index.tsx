@@ -26,6 +26,7 @@ export function PostList() {
           className={`${typography.Heading4} ${styles.navButton}`}
           disabled={isDisabledPrev()}
           onClick={prevPage}
+          data-testid="prev"
         >
           {t("prev")}
         </button>
@@ -33,6 +34,7 @@ export function PostList() {
           className={`${typography.Heading4} ${styles.navButton}`}
           disabled={isDisabledNext()}
           onClick={nextPage}
+          data-testid="next"
         >
           {t("next")}
         </button>
