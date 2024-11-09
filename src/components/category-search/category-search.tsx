@@ -26,7 +26,7 @@ export const CategorySearch = ({ category }: CategorySearchProps) => {
   const debouncedTagValue = useDebounce(tagValue,500)
 
   const { data: posts, isLoading } = useService(getPostsByCategory,
-    [category, selectedTags,debouncedTagValue]);
+    [category, selectedTags,debouncedTagValue,window.location.origin]);
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setTagValue(e.target.value);
