@@ -4,11 +4,11 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { Button } from "@/components/button/button";
 import { NavLink } from "@/components/nav-link/nav-link";
 import { Link } from "@/i18n/routing";
+import { mocks } from "@/mocks";
 import typography from "@/styles/typography.module.scss";
 import { formattedDate } from "@/utils/format-date";
 
 import styles from "./posts-banner.module.scss";
-import { mocks } from "@/mocks";
 
 export const PostsBanner = async () => {
   const t = await getTranslations("PostsBanner");
