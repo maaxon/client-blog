@@ -18,6 +18,6 @@ export const useService = <T, A extends unknown[]>(service: (...args: A) => Prom
       }
     };
     fetchData();
-  }, [args, service]);
+  }, [...args]);
   return { data, isLoading, hasError };
 };
