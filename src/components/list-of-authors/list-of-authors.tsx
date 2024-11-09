@@ -15,7 +15,7 @@ import styles from "./list-of-authors.module.scss";
 export const ListOfAuthors = async () => {
   const t = await getTranslations("ListOfAuthors");
 
-  const authors = mocks.authors.slice(4);
+  const authors = mocks.authors.slice(0,4);
 
   return (
     <div className={styles.container}>

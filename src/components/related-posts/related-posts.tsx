@@ -14,7 +14,7 @@ export const RelatedPosts = async ({ id }: RelatedPostsProps) => {
   const t = await getTranslations("PostsBanner");
   const locale = await getLocale();
 
-  const posts = await getRelatedPosts(id);
+  const posts = getRelatedPosts(id);
 
   return (
     <div className={styles.container}>

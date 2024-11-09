@@ -1,15 +1,6 @@
-import { Blog } from "@/types";
-import { getBaseUrl } from "@/utils/get-base-url/get-base-url";
+import { mocks } from "@/mocks";
 
-export const getPostById = async (id: string,url?:string) => {
-  try {
-    const baseUrl = url || getBaseUrl();
+export function getPostById(id: string) {
 
-    const response = await fetch(`${baseUrl}/api/posts/${id}`);
-    const post: Blog = await response.json();
-
-    return post;
-  } catch (error) {
-    throw new Error(`HandledError: ${error}`);
-  }
-};
+  return mocks.posts.find((post) => post.id === id);
+}

@@ -13,8 +13,10 @@ import styles from "./blog-post.module.scss";
 import { BlogPostProps } from "./blog-post.types";
 
 export const BlogPost = async ({ id }: BlogPostProps) => {
-  const post = await getPostById(id);
+  const post = getPostById(id);
   const locale = await getLocale();
+
+  if(!post) return <h1>Post not found</h1>
 
   return (
     <div className={styles.container}>

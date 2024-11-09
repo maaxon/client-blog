@@ -1,14 +1,11 @@
-import { Blog } from "@/types";
-import { getBaseUrl } from "@/utils/get-base-url/get-base-url";
+import { mocks } from "@/mocks";
 
-export const getRelatedPosts = async (id:string,url?:string) => {
+export const getRelatedPosts = (id:string) => {
   try {
-    const baseUrl = url || getBaseUrl();
-    const response = await fetch(`${baseUrl}/api/posts/related/${id}`);
-
-    const posts: Blog[] = await response.json();
-
-    return posts;
+    const currentPost = mocks.posts.find((post) => post.id === id);
+    return mocks.posts
+      .filter((post) => post.id !== currentPost?.id && post.author.id === id)
+      .slice(0, 3);
   } catch (error) {
     throw new Error(`HandledError: ${error}`);
   }

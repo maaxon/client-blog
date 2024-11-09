@@ -14,7 +14,7 @@ export const PostsBanner = async () => {
   const t = await getTranslations("PostsBanner");
   const locale = await getLocale();
 
-  const posts = mocks.posts.slice(4);
+  const posts = mocks.posts.slice(0,4);
   const post = mocks.featured_posts;
 
   return (
