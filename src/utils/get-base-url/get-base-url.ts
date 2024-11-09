@@ -1,7 +1,8 @@
 export const getBaseUrl = (): string => {
   if (process.env.NEXT_PUBLIC_VERCEL_URL) {
-    return `https://client-blog-tan.vercel.app`;
+    return process.env.NEXT_PUBLIC_VERCEL_URL;
   }
 
   return "http://localhost:3000";
 };
+

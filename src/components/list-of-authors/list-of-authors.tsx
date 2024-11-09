@@ -11,11 +11,12 @@ import LinkedInIcon from "@public/icons/social-networks/linked-in-icon.svg";
 import TwitterIcon from "@public/icons/social-networks/twitter-icon.svg";
 
 import styles from "./list-of-authors.module.scss";
+import { mocks } from "@/mocks";
 
 export const ListOfAuthors = async () => {
   const t = await getTranslations("ListOfAuthors");
 
-  const authors = await getFirstFourAuthors();
+  const authors = mocks.authors.slice(4);
 
   return (
     <div className={styles.container}>
