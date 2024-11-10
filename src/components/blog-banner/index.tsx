@@ -3,7 +3,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 
 import { Button } from "@/components/button/button";
 import { NavLink } from "@/components/nav-link/nav-link";
-import { mocks } from "@/mocks";
+import { getFeaturedPost } from "@/services/posts/get-featured-post";
 import typography from "@/styles/typography.module.scss";
 import { formattedDate } from "@/utils/format-date";
 
@@ -13,7 +13,7 @@ export async function BlogBanner() {
   const t = await getTranslations("FeaturePost");
   const locale = await getLocale();
 
-  const post = mocks.featured_posts;
+  const post = getFeaturedPost();
 
   return (
     <section className={styles.container}>

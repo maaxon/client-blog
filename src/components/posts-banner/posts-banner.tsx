@@ -4,7 +4,8 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { Button } from "@/components/button/button";
 import { NavLink } from "@/components/nav-link/nav-link";
 import { Link } from "@/i18n/routing";
-import { mocks } from "@/mocks";
+import { getFeaturedPost } from "@/services/posts/get-featured-post";
+import { getFirstFourPosts } from "@/services/posts/get-last-four-posts";
 import typography from "@/styles/typography.module.scss";
 import { formattedDate } from "@/utils/format-date";
 
@@ -14,8 +15,8 @@ export const PostsBanner = async () => {
   const t = await getTranslations("PostsBanner");
   const locale = await getLocale();
 
-  const posts = mocks.posts.slice(0,4);
-  const post = mocks.featured_posts;
+  const posts = getFirstFourPosts();
+  const post = getFeaturedPost();
 
   return (
     <div className={styles.container}>

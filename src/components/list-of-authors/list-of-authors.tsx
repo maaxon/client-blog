@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 
 import { IconLink } from "@/components/icon-link/icon-link";
 import { Link } from "@/i18n/routing";
-import { mocks } from "@/mocks";
+import { getFirstFourAuthors } from "@/services/authors/get-first-four-authors";
 import typography from "@/styles/typography.module.scss";
 import FacebookIcon from "@public/icons/social-networks/facebook-icon.svg";
 import InstagramIcon from "@public/icons/social-networks/instagram-icon.svg";
@@ -15,7 +15,7 @@ import styles from "./list-of-authors.module.scss";
 export const ListOfAuthors = async () => {
   const t = await getTranslations("ListOfAuthors");
 
-  const authors = mocks.authors.slice(0,4);
+  const authors = getFirstFourAuthors();
 
   return (
     <div className={styles.container}>
