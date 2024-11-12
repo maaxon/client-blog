@@ -64,52 +64,29 @@
     }
   }
 
-  @media #{map-get($device, mobile-s)} {
+  @media #{map-get($device, ultra-desktop)} {
     .content {
-      padding: 64px 20px 96px 20px;
-      gap: 12px;
+      padding: 160px 120px 224px 120px;
+    }
+  }
+
+  @media #{map-get($device, large-desktop)} {
+    .content {
+      padding: 144px 100px 208px 100px;
+    }
+  }
+
+
+  @media #{map-get($device, desktop)} {
+    .content {
+      padding: 128px 80px 192px 80px;
 
       .title {
-        max-width: 100%;
-        padding: 4px 0;
+        max-width: 850px;
       }
 
       .description {
-        max-width: 100%;
-      }
-    }
-  }
-
-  @media #{map-get($device, mobile-m)} {
-    .content {
-      padding: 64px 24px 96px 24px;
-
-      .title {
-        max-width: 100%;
-      }
-    }
-  }
-
-  @media #{map-get($device, mobile-l)} {
-    .content {
-      padding: 64px 32px 96px 32px;
-
-      .title {
-        max-width: 100%;
-      }
-    }
-  }
-
-  @media #{map-get($device, tablet)} {
-    .content {
-      padding: 96px 40px 128px 40px;
-
-      .title {
-        max-width: 100%;
-      }
-
-      .description {
-        max-width: 100%;
+        max-width: 550px;
       }
     }
   }
@@ -128,29 +105,60 @@
     }
   }
 
-  @media #{map-get($device, desktop)} {
+  @media #{map-get($device, tablet)} {
     .content {
-      padding: 128px 80px 192px 80px;
+      padding: 96px 40px 128px 40px;
 
       .title {
-        max-width: 850px;
+        max-width: 100%;
       }
 
       .description {
-        max-width: 550px;
+        max-width: 100%;
       }
     }
   }
 
-  @media #{map-get($device, large-desktop)} {
+  @media #{map-get($device, mobile-l)} {
     .content {
-      padding: 144px 100px 208px 100px;
+      padding: 64px 32px 96px 32px;
+
+      .title {
+        max-width: 100%;
+      }
     }
   }
 
-  @media #{map-get($device, ultra-desktop)} {
+  @media #{map-get($device, mobile-m)} {
     .content {
-      padding: 160px 120px 224px 120px;
+      padding: 64px 24px 96px 24px;
+
+      .title {
+        max-width: 100%;
+      }
     }
   }
+
+
+  @media #{map-get($device, mobile-s)} {
+    .content {
+      padding: 64px 20px 96px 20px;
+      gap: 12px;
+
+      .title {
+        max-width: 100%;
+        padding: 4px 0;
+      }
+
+      .description {
+        max-width: 100%;
+      }
+    }
+  }
+
+
+
+
+
+
 }

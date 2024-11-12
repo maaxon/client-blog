@@ -4,11 +4,11 @@ import { ContactFormData } from "@/components/contact-form/contact-form.type";
 import emailjs from "@emailjs/browser";
 
 export const sendEmail = (data: ContactFormData) => {
-  const templateParams = {
-    user_email: data.email,
-    user_name: data.name,
-    message: data.message,
-  };
+    const templateParams = {
+      user_email: data.email,
+      user_name: data.name,
+      message: data.message,
+    };
 
   emailjs
     .send(

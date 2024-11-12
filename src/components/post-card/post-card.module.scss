@@ -1,16 +1,33 @@
 @import "@/styles/variables";
 
-.container{
+.container {
   display: grid;
   max-width: 1100px;
   grid-template-columns:1fr 2fr;
   grid-column-gap: 20px;
 
+  transition:
+          background-color 0.3s ease,
+          transform 0.3s ease;
+
+  &:hover {
+    background-color: $light-yellow;
+    transform: scale(1.05);
+  }
+
+  @media #{map-get($device, tablet)} {
+    grid-template-columns:1fr;
+    text-align: center  ;
+  }
 
   .imageWrapper {
     width: 490px;
     height: 300px;
     position: relative;
+
+    @media #{map-get($device, tablet)} {
+      display: none;
+    }
   }
 
   .image {
@@ -18,13 +35,13 @@
     object-position: center;
   }
 
-  .content{
+  .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
 
-    .category{
+    .category {
       color: $purple;
     }
   }

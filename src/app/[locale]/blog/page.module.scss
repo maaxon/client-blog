@@ -8,4 +8,8 @@
     padding-bottom: 40px;
     border-bottom: 1px solid $medium-gray;
   }
+
+  @media #{map-get($device, mobile-l)} {
+    margin: 20px;
+  }
 }
