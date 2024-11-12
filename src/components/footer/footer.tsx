@@ -71,9 +71,10 @@ export const Footer = () => {
             className={styles.button}
             type="email"
             placeholder={t("input-placeholder")}
+            data-testid="footer-email"
           />
           {!!errors.email && (
-            <p className={classNames(typography.body1, styles.error)}>
+            <p className={classNames(typography.body1, styles.error)} data-testid="footer-error">
               {errors.email.message}
             </p>
           )}

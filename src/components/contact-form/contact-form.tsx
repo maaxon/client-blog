@@ -41,7 +41,7 @@ export const ContactForm = () => {
           className={styles.input}
         />
         {!!errors.name && (
-          <p className={classNames(typography.body1, styles.error)}>
+          <p className={classNames(typography.body1, styles.error)} data-testid="name-error">
             {errors.name.message}
           </p>
         )}
@@ -55,7 +55,7 @@ export const ContactForm = () => {
           className={styles.input}
         />
         {!!errors.email && (
-          <p className={classNames(typography.body1, styles.error)}>
+          <p className={classNames(typography.body1, styles.error)} data-testid="email-error">
             {errors.email.message}
           </p>
         )}
@@ -68,7 +68,7 @@ export const ContactForm = () => {
           className={classNames(styles.input)}
         />
         {!!errors.message && (
-          <p className={classNames(typography.body1, styles.error)}>
+          <p className={classNames(typography.body1, styles.error)} data-testid="message-error">
             {errors.message.message}
           </p>
         )}
