@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 
-import { CategoryBanner } from "@/components/category-banner/category-banner";
-import { CategorySearch } from "@/components/category-search/category-search";
+import { CategoryBanner } from "@/components/category-banner/";
+import { CategorySearch } from "@/components/category-search/";
 import { categories } from "@/types";
 
 import styles from "./page.module.scss";

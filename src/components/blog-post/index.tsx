@@ -2,7 +2,7 @@ import Image from "next/image";
 import { getLocale } from "next-intl/server";
 import classNames from "classnames";
 
-import { NavLink } from "@/components/nav-link/nav-link";
+import { NavLink } from "@/components/nav-link";
 import { categories } from "@/constants/categories.constant";
 import { blockType } from "@/constants/text-block.constant";
 import { getPostById } from "@/services/posts/get-post-by-id";

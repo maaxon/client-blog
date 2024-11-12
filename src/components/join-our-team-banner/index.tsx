@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 
-import { Button } from "@/components/button/button";
+import { Button } from "@/components/button/";
 import typography from "@/styles/typography.module.scss";
 
 import styles from "./join-our-team-banner.module.scss";

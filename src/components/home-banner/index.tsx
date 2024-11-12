@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 
-import { Button } from "@/components/button/button";
-import { NavLink } from "@/components/nav-link/nav-link";
+import { Button } from "@/components/button/";
+import { NavLink } from "@/components/nav-link";
 import typography from "@/styles/typography.module.scss";
 import { formattedDate } from "@/utils/format-date";
 

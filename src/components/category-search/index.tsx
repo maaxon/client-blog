@@ -4,8 +4,8 @@ import { ChangeEvent, useState } from "react";
 import { useTranslations } from "next-intl";
 import classNames from "classnames";
 
-import { FormInput } from "@/components/form-input/form-input";
-import { Loader } from "@/components/loader/loader";
+import { FormInput } from "@/components/form-input";
+import { Loader } from "@/components/loader";
 import { categories } from "@/constants/categories.constant";
 import { tags } from "@/constants/tags.constatn";
 import { useDebounce } from "@/hooks/use-debounce/use-debounce";

@@ -1,5 +1,5 @@
-import { AuthorBanner } from "@/components/author-banner/author-banner";
-import { ListOfAuthorPosts } from "@/components/list-of-author-posts/list-of-author-posts";
+import { AuthorBanner } from "@/components/author-banner";
+import { ListOfAuthorPosts } from "@/components/list-of-author-posts";
 
 import styles from "./page.module.scss";
 import { AuthorProps } from "./types";

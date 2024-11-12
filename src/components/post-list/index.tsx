@@ -2,8 +2,8 @@
 
 import { useTranslations } from "next-intl";
 
-import { Loader } from "@/components/loader/loader";
-import { PostCard } from "@/components/post-card/post-card";
+import { Loader } from "@/components/loader";
+import { PostCard } from "@/components/post-card";
 import { usePagePosts } from "@/hooks/use-page-posts/use-page-posts";
 import typography from "@/styles/typography.module.scss";
 

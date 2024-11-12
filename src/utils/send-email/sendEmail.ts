@@ -10,10 +10,10 @@ export const sendEmail = (data: ContactFormData) => {
 
   emailjs
     .send(
-      "service_tvk0sin",
-      "template_e41uzjd",
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
       templateParams,
-      "v3179Takr1EXEB0ig",
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string,
     )
     .then((response) => {
       console.log("SUCCESS!", response.status, response.text);

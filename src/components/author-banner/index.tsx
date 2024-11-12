@@ -1,7 +1,7 @@
 import Image from "next/image";
 import classNames from "classnames";
 
-import { IconLink } from "@/components/icon-link/icon-link";
+import { IconLink } from "@/components/icon-link/";
 import { getAuthorById } from "@/services/authors/get-author-by-id";
 import typography from "@/styles/typography.module.scss";
 import FacebookIcon from "@public/icons/social-networks/facebook-icon.svg";

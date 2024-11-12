@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
-import { IconLink } from "@/components/icon-link/icon-link";
+import { IconLink } from "@/components/icon-link";
 import { Link } from "@/i18n/routing";
 import { getFirstFourAuthors } from "@/services/authors/get-first-four-authors";
 import typography from "@/styles/typography.module.scss";

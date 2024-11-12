@@ -1,6 +1,6 @@
-import { BlogPost } from "@/components/blog-post/blog-post";
-import { JoinOurTeamBanner } from "@/components/join-our-team-banner/join-our-team-banner";
-import { RelatedPosts } from "@/components/related-posts/related-posts";
+import { BlogPost } from "@/components/blog-post";
+import { JoinOurTeamBanner } from "@/components/join-our-team-banner";
+import { RelatedPosts } from "@/components/related-posts";
 
 import styles from "./page.module.scss";
 

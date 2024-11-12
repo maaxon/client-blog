@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 
-import { NavLink } from "@/components/nav-link/nav-link";
+import { NavLink } from "@/components/nav-link";
 import typography from "@/styles/typography.module.scss";
 
 import styles from "./home-about-us-banner.module.scss";

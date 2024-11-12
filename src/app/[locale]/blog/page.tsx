@@ -1,8 +1,8 @@
 import classNames from "classnames";
 
 import { BlogBanner } from "@/components/blog-banner";
-import { CategorySelector } from "@/components/category-selector/category-selector";
-import { JoinOurTeamBanner } from "@/components/join-our-team-banner/join-our-team-banner";
+import { CategorySelector } from "@/components/category-selector";
+import { JoinOurTeamBanner } from "@/components/join-our-team-banner";
 import { PostList } from "@/components/post-list";
 import typography from "@/styles/typography.module.scss"
 

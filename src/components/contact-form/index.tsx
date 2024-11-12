@@ -4,9 +4,9 @@ import { useForm } from "react-hook-form";
 import { useTranslations } from "next-intl";
 import classNames from "classnames";
 
-import { Button } from "@/components/button/button";
-import { FormInput } from "@/components/form-input/form-input";
-import { FormTextArea } from "@/components/form-text-area/form-text-area";
+import { Button } from "@/components/button/";
+import { FormInput } from "@/components/form-input";
+import { FormTextArea } from "@/components/form-text-area";
 import typography from "@/styles/typography.module.scss";
 import { ContactFormData } from "@/types";
 import { sendEmail } from "@/utils/send-email/sendEmail";

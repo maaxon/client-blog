@@ -2,8 +2,8 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import classNames from "classnames";
 
-import { JoinOurTeamBanner } from "@/components/join-our-team-banner/join-our-team-banner";
-import { ListOfAuthors } from "@/components/list-of-authors/list-of-authors";
+import { JoinOurTeamBanner } from "@/components/join-our-team-banner";
+import { ListOfAuthors } from "@/components/list-of-authors";
 import typography from "@/styles/typography.module.scss";
 import PurpleShape from "@public/icons/shapes/purple-shape.svg";
 import YellowShape from "@public/icons/shapes/yellow-shape.svg";

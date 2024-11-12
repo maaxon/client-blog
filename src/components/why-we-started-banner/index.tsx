@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
-import { Button } from "@/components/button/button";
+import { Button } from "@/components/button/";
 import typography from "@/styles/typography.module.scss";
 import BannerImage from "@public/images/why-we-started-image.png";
 

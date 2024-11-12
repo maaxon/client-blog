@@ -2,7 +2,7 @@
 
 import { useEffect, useLayoutEffect, useRef } from "react";
 
-import { createContainer, Portal } from "@/components/portal/portal";
+import { createContainer, Portal } from "@/components/portal";
 
 import { MODAL_CONTAINER_ID } from "./constants";
 import styles from "./modal.module.scss";

@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import classNames from "classnames";
 
-import { PostCard } from "@/components/post-card/post-card";
+import { PostCard } from "@/components/post-card";
 import { getPostsByAuthorId } from "@/services/posts/get-posts-by-author-id";
 import typography from "@/styles/typography.module.scss";
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 
-import { NavLink } from "@/components/nav-link/nav-link";
+import { NavLink } from "@/components/nav-link";
 import { Link } from "@/i18n/routing";
 import { getRelatedPosts } from "@/services/posts/get-related-posts";
 import typography from "@/styles/typography.module.scss";

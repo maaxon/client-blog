@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import classNames from "classnames";
 
-import { ContactForm } from "@/components/contact-form/contact-form";
+import { ContactForm } from "@/components/contact-form";
 import { ContactMap } from "@/components/contact-map";
 import typography from "@/styles/typography.module.scss";
 
