@@ -13,14 +13,14 @@ export function PostList() {
   const { posts, isLoading, nextPage, prevPage, isDisabledNext, isDisabledPrev } = usePagePosts();
   const t = useTranslations("PostsBanner");
 
-  if (isLoading) {
-    return <Loader />;
-  }
-
   return (
     <section className={styles.container}>
+      {isLoading &&
+        <section className={styles.loaderContainer}><Loader/></section>
+      }
       {posts && posts.map(({ id, title, title_image, description, category }) =>
-        <PostCard key={id} id={id} title={title} description={description} image={title_image} category={category} />)}
+        <PostCard key={id} id={id} title={title} description={description} image={title_image} category={category} />
+      )}
       <section className={styles.pagination}>
         <button
           className={`${typography.Heading4} ${styles.navButton}`}

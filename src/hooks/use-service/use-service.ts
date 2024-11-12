@@ -8,6 +8,7 @@ export const useService = <T, A extends unknown[]>(service: (...args: A) => Prom
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
+      setData(undefined)
       try {
         const response = await service(...args);
         setIsLoading(false);
