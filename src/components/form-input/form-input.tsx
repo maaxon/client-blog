@@ -3,7 +3,7 @@ import React, { forwardRef } from "react";
 import typography from "@/styles/typography.module.scss";
 
 import styles from "./form-input.module.scss";
-import { FormInputProps } from "./types";
+import { FormInputProps } from "./form-input.type";
 
 export const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
   ({ className, onChange, onBlur, value, placeholder, type, ...rest }, ref) => (

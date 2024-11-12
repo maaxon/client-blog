@@ -1,6 +1,4 @@
-//TODO move type from contact-form
-
-import { ContactFormData } from "@/components/contact-form/contact-form.type";
+import { ContactFormData } from "@/types";
 import emailjs from "@emailjs/browser";
 
 export const sendEmail = (data: ContactFormData) => {

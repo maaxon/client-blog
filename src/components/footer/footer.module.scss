@@ -118,3 +118,20 @@
     gap: 26px;
   }
 }
+
+.error {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  margin-top: 100px;
+
+  @media #{map-get($device, mobile-l)} {
+    font-size: 10px;
+    position: relative;
+    margin-top: 0;
+  }
+
+  @media #{map-get($device, mobile-s)} {
+    font-size: 9px;
+  }
+}

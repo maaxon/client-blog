@@ -8,11 +8,11 @@ import { Button } from "@/components/button/button";
 import { FormInput } from "@/components/form-input/form-input";
 import { FormTextArea } from "@/components/form-text-area/form-text-area";
 import typography from "@/styles/typography.module.scss";
+import { ContactFormData } from "@/types";
 import { sendEmail } from "@/utils/send-email/sendEmail";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import styles from "./contact-form.module.scss";
-import { ContactFormData } from "./contact-form.type";
 import { schema } from "./form-schema";
 
 export const ContactForm = () => {
@@ -24,7 +24,7 @@ export const ContactForm = () => {
     formState: { errors },
   } = useForm<ContactFormData>({
     resolver: zodResolver(schema),
-    mode:"onChange"
+    mode: "onChange",
   });
 
   const onSubmit = (data: ContactFormData) => {
