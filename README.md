@@ -1,5 +1,16 @@
 # Tестовое задание Modsen Client Blog
 
+## Deploy
+
+- https://modsen-twitter-nine.vercel.app
+
+## Run
+
+- yarn dev
+
+## Test 
+
+- yarn test
 
 ## Содержание
 
