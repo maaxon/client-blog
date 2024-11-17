@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/button/";
 import { Modal } from "@/components/modal";
 import { NavLink } from "@/components/nav-link";
+import { headerLinks } from "@/constants/links.constant";
 import { useModalOpen } from "@/hooks/use-modal-open/use-modal-open";
 import typography from "@/styles/typography.module.scss";
 import { Video } from "@public/video";
@@ -25,18 +26,10 @@ export const Header = () => {
     <header className={styles.header}>
       <h4 className={`${typography.Heading4} ${styles.title}`}>{t("title")}</h4>
       <nav className={`${styles.navbar} ${isBurgerOpen ? styles.open : ""}`}>
-        <NavLink href={t("nav.home-link.href")}>
-          {t("nav.home-link.title")}
-        </NavLink>
-        <NavLink href={t("nav.blog-link.href")}>
-          {t("nav.blog-link.title")}
-        </NavLink>
-        <NavLink href={t("nav.about-us-link.href")}>
-          {t("nav.about-us-link.title")}
-        </NavLink>
-        <NavLink href={t("nav.contact-us-link.href")}>
-          {t("nav.contact-us-link.title")}
-        </NavLink>
+        {headerLinks.map(({ href, title }, index) =>
+          <NavLink key={index} href={t(href)}>
+            {t(title)}
+          </NavLink>)}
       </nav>
       <div className={styles.burger} onClick={handleBurgerToggle}>
         <span className={styles.burgerLine}></span>

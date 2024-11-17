@@ -1,9 +1,9 @@
-export type PortalProps = {
+export interface PortalProps{
   id: string;
   children: React.ReactNode;
-};
+}
 
-export type ContainerOptions = {
+export interface ContainerOptions{
   id: string;
   mountNode?: HTMLElement;
-};
+}

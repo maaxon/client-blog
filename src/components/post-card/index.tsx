@@ -5,14 +5,7 @@ import { Link } from "@/i18n/routing";
 import typography from "@/styles/typography.module.scss";
 
 import styles from "./post-card.module.scss";
-
-interface PostCardProps {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  category: string;
-}
+import { PostCardProps } from "./post-card.type";
 
 export function PostCard({ id, title, description, image, category }: PostCardProps) {
   return (

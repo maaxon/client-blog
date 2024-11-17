@@ -48,28 +48,28 @@ export const ListOfAuthors = async () => {
                 </p>
               </div>
               <div className={styles.socials}>
-                {!!facebook && (
+                {facebook && (
                   <IconLink
                     icon={FacebookIcon}
                     alt={`${name}'s facebook icon`}
                     href={facebook}
                   />
                 )}
-                {!!twitter && (
+                {twitter && (
                   <IconLink
                     icon={TwitterIcon}
                     alt={`${name}'s twitter icon`}
                     href={twitter}
                   />
                 )}
-                {!!instagram && (
+                {instagram && (
                   <IconLink
                     icon={InstagramIcon}
                     alt={`${name}'s instagram icon`}
                     href={instagram}
                   />
                 )}
-                {!!linkedin && (
+                {linkedin && (
                   <IconLink
                     icon={LinkedInIcon}
                     alt={`${name}'s linked in icon`}

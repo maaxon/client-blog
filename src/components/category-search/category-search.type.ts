@@ -1,5 +1,11 @@
 import { Category } from "@/types";
 
-export type CategorySearchProps = {
+export interface CategorySearchProps {
   category: Category;
-};
+}
+
+export interface CategorySearchState {
+  tagValue: string,
+  selectedTags: string[]
+}
+

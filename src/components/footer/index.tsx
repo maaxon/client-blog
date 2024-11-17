@@ -8,13 +8,10 @@ import { Button } from "@/components/button";
 import { FormInput } from "@/components/form-input";
 import { IconLink } from "@/components/icon-link/";
 import { NavLink } from "@/components/nav-link";
+import { footerLinks, socialLinks } from "@/constants/links.constant";
 import typography from "@/styles/typography.module.scss";
 import { sendEmail } from "@/utils/send-email/sendEmail";
 import { zodResolver } from "@hookform/resolvers/zod";
-import FacebookIcon from "@public/icons/social-networks/facebook-icon.svg";
-import InstagramIcon from "@public/icons/social-networks/instagram-icon.svg";
-import LinkedInIcon from "@public/icons/social-networks/linked-in-icon.svg";
-import TwitterIcon from "@public/icons/social-networks/twitter-icon.svg";
 
 import { EmailData } from "./footer.config";
 import styles from "./footer.module.scss";
@@ -34,35 +31,29 @@ export const Footer = () => {
     mode: "onChange",
   });
 
-  const onSubmit = (data: FooterFormData) =>{
+  const onSubmit = (data: FooterFormData) => {
     sendEmail({
       name: EmailData.name,
       email: data.email!,
-      message: EmailData.message
-    })
-    setValue("email",undefined)
-  }
+      message: EmailData.message,
+    });
+    setValue("email", undefined);
+  };
 
   return (
     <footer className={styles.footer}>
       <section className={styles.topSection}>
         <h4 className={`${typography.Heading4} ${styles.title}`}>{t("top-title")}</h4>
         <nav className={`${styles.navbar}`}>
-          <NavLink href={t("nav.home.href")}>{t("nav.home.title")}</NavLink>
-          <NavLink href={t("nav.blog.href")}>{t("nav.blog.title")}</NavLink>
-          <NavLink href={t("nav.about-us.href")}>
-            {t("nav.about-us.title")}
-          </NavLink>
-          <NavLink href={t("nav.contact-us.href")}>
-            {t("nav.contact-us.title")}
-          </NavLink>
-          <NavLink href={t("nav.privacy-policy.href")}>
-            {t("nav.privacy-policy.title")}
-          </NavLink>
+          {footerLinks.map(({ href, title }, index) =>
+            <NavLink key={index} href={t(href)}>
+              {t(title)}
+            </NavLink>,
+          )}
         </nav>
       </section>
       <section className={styles.middleSection}>
-        <h2 className={classNames(typography.Heading2,styles.title)}>
+        <h2 className={classNames(typography.Heading2, styles.title)}>
           {t("middle-title")}
         </h2>
         <form className={styles.inputContainer} onSubmit={handleSubmit(onSubmit)}>
@@ -91,26 +82,14 @@ export const Footer = () => {
           </p>
         </div>
         <div className={styles.socialNetworkContainer}>
-          <IconLink
-            alt={t("social-links.facebook.alt")}
-            href={t("social-links.facebook.href")}
-            icon={FacebookIcon}
-          />
-          <IconLink
-            alt={t("social-links.twitter.alt")}
-            href={t("social-links.twitter.href")}
-            icon={TwitterIcon}
-          />
-          <IconLink
-            alt={t("social-links.instagram.alt")}
-            href={t("social-links.instagram.href")}
-            icon={InstagramIcon}
-          />
-          <IconLink
-            alt={t("social-links.linkedin.alt")}
-            href={t("social-links.linkedin.href")}
-            icon={LinkedInIcon}
-          />
+          {socialLinks.map(({ href, alt, icon }, index) =>
+            <IconLink
+              key={index}
+              alt={t(alt)}
+              href={t(href)}
+              icon={icon}
+            />,
+          )}
         </div>
       </section>
     </footer>

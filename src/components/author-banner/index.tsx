@@ -31,28 +31,28 @@ export const AuthorBanner = async ({ id }: AuthorBannerProps) => {
           {author.page.description}
         </p>
         <div className={styles.socials}>
-          {!!author.facebook && (
+          {author.facebook && (
             <IconLink
               icon={FacebookIcon}
               alt={`${author.name}'s facebook icon`}
               href={author.facebook}
             />
           )}
-          {!!author.twitter && (
+          {author.twitter && (
             <IconLink
               icon={TwitterIcon}
               alt={`${author.name}'s twitter icon`}
               href={author.twitter}
             />
           )}
-          {!!author.instagram && (
+          {author.instagram && (
             <IconLink
               icon={InstagramIcon}
               alt={`${author.name}'s instagram icon`}
               href={author.instagram}
             />
           )}
-          {!!author.linkedin && (
+          {author.linkedin && (
             <IconLink
               icon={LinkedInIcon}
               alt={`${author.name}'s linked in icon`}

@@ -1,3 +1,3 @@
-export type RelatedPostsProps = {
+export interface RelatedPostsProps{
   id: string;
-};
+}

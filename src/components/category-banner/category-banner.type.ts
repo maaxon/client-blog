@@ -1,5 +1,5 @@
 import { Category } from "@/types";
 
-export type CategoryBannerProps = {
+export interface CategoryBannerProps {
   category: Category;
-};
+}
