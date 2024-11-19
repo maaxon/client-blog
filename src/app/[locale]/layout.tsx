@@ -6,8 +6,8 @@ import { Inter, Sen } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
-import { Footer } from "@/components/footer/footer";
-import { Header } from "@/components/header/header";
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
 
 export const metadata: Metadata = {
   title: "Modsen Client Blog",

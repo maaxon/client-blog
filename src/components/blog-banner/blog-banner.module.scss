@@ -5,43 +5,70 @@
   padding: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 15vw;
-}
+  grid-column-gap: 200px;
 
-.content{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  .author{
-    color: $purple;
+  @media #{map-get($device, laptop)} {
+    padding: 30px;
+    grid-column-gap: 80px;
   }
 
-  .title{
-    padding: 8px 0;
+  @media #{map-get($device, mobile-l)} {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
-  .button{
-    max-width: 260px;
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media #{map-get($device, mobile-l)} {
+      gap: 10px;
+    }
+
+    .author{
+      color: $purple;
+    }
+
+    .title{
+      padding: 8px 0;
+    }
+
+    .metaInfo{
+      color: $dark-gray;
+    }
+
+
+    .button{
+      max-width: 260px;
+    }
   }
+
+  .imageContainer {
+    position: relative;
+    height: 360px;
+
+    @media #{map-get($device, mobile-l)} {
+      display: none;
+    }
+
+    .image {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+
 }
 
 
 
 
 
-.imageContainer {
-  position: relative;
-  height: 360px;
-}
-
-.metaInfo{
-  color: $dark-gray;
-}
 
 
 
-.image {
-  object-fit: cover;
-  object-position: center;
-}
+
+
+
+

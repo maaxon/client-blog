@@ -1,17 +1,19 @@
-import styles from "./blog-banner.module.scss";
 import Image from "next/image";
-import { getFeaturedPost } from "@/services/posts/get-featured-post";
 import { getLocale, getTranslations } from "next-intl/server";
+
+import { Button } from "@/components/button/";
+import { NavLink } from "@/components/nav-link";
+import { getFeaturedPost } from "@/services/posts/get-featured-post";
 import typography from "@/styles/typography.module.scss";
-import { NavLink } from "@/components/nav-link/nav-link";
 import { formattedDate } from "@/utils/format-date";
-import { Button } from "@/components/button/button";
+
+import styles from "./blog-banner.module.scss";
 
 export async function BlogBanner() {
   const t = await getTranslations("FeaturePost");
   const locale = await getLocale();
 
-  const post = await getFeaturedPost();
+  const post = getFeaturedPost();
 
   return (
     <section className={styles.container}>

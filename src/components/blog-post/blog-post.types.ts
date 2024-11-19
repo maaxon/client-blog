@@ -1,3 +1,3 @@
-export type BlogPostProps = {
+export interface BlogPostProps{
   id: string;
-};
+}

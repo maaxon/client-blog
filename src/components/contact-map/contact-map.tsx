@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
-import { markerData, markerIcon } from "./config";
+import { markerData, markerIcon } from "./contact-map.config";
 import styles from "./contact-map.module.scss";
 
 export const ContactMap = () => (

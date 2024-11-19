@@ -1,4 +1,4 @@
-import { Category } from "@interfaces/category.interface";
+import { Category } from "@/types";
 import BusinessIcon from "@public/icons/categories/business-icon.svg";
 import EconomyIcon from "@public/icons/categories/economy-icon.svg";
 import StartupIcon from "@public/icons/categories/startup-icon.svg";

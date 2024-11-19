@@ -1,21 +1,19 @@
-//TODO move type from contact-form
-
-import { ContactFormData } from "@/components/contact-form/contact-form.type";
+import { ContactFormData } from "@/types";
 import emailjs from "@emailjs/browser";
 
 export const sendEmail = (data: ContactFormData) => {
-  const templateParams = {
-    user_email: data.email,
-    user_name: data.name,
-    message: data.message,
-  };
+    const templateParams = {
+      user_email: data.email,
+      user_name: data.name,
+      message: data.message,
+    };
 
   emailjs
     .send(
-      "service_tvk0sin",
-      "template_e41uzjd",
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
       templateParams,
-      "v3179Takr1EXEB0ig",
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string,
     )
     .then((response) => {
       console.log("SUCCESS!", response.status, response.text);

@@ -1,1 +1,1 @@
-export { Video } from "./video.tsx";
+export { Video } from "./video";
