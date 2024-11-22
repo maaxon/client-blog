@@ -7,7 +7,5 @@ test("test blog post", async ({ page }) => {
   await expect(post).toHaveText("Step-by-step guide to choosing great font pairs")
   await page.getByTestId("post-card").first().click({force:true})
 
-  await page.screenshot({ path: 'screenshot.png', fullPage: true });
-
   await expect(page.getByTestId("blog-post-title")).toHaveText("Step-by-step guide to choosing great font pairs");
 });

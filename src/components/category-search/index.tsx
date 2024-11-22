@@ -54,13 +54,13 @@ export const CategorySearch = ({ category }: CategorySearchProps) => {
     <div className={styles.container}>
       <div className={styles.list}>
         {isLoading &&
-          <div className={styles.loaderContainer}>
+          <div className={styles.loaderContainer} data-testid="loader">
             <Loader />
           </div>
         }
         {posts && posts.length === 0 &&
           <div className={styles.placeholder}>
-            <p className={typography.Heading3}>{t("placeholder.message")}</p>
+            <p className={typography.Heading3} data-testid="no-posts">{t("placeholder.message")}</p>
           </div>
         }
         {posts && posts.map(({ id, title_image, title, description, category }) => (
@@ -83,6 +83,7 @@ export const CategorySearch = ({ category }: CategorySearchProps) => {
             value={tagValue}
             placeholder={t("tags.placeholder")}
             className={styles.search}
+            data-testid="search-input"
           />
         </div>
         <div className={styles.categoryList}>
