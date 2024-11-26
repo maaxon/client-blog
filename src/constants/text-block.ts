@@ -1,4 +1,4 @@
-export enum blockType {
+export enum BlockType {
   HEADING = "heading",
   PARAGRAPH = "paragraph",
 }

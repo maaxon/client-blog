@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
-import { categories } from "@/constants/categories.constant";
+import { CATEGORIES } from "@/constants/categories";
 import { Link } from "@/i18n/routing";
 import typography from "@/styles/typography.module.scss";
 
@@ -14,7 +14,7 @@ export const CategorySelector = async () => {
     <div className={styles.container}>
       <h3 className={typography.Heading2}>{t("title")}</h3>
       <div className={styles.content}>
-        {Object.entries(categories).map(([category, { icon }]) => (
+        {Object.entries(CATEGORIES).map(([category, { icon }]) => (
           <Link
             className={styles.card}
             key={category}

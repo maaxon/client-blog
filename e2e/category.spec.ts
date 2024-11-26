@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-import { CategoryPage } from "./fixtures/pom/pom";
+import { CategoryPage } from "./fixtures/pom/category";
 
 test("test initial page", async ({page}) => {
   const CategoryPageModel = new CategoryPage(page);

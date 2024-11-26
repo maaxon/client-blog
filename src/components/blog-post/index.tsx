@@ -3,8 +3,8 @@ import { getLocale } from "next-intl/server";
 import classNames from "classnames";
 
 import { NavLink } from "@/components/nav-link";
-import { categories } from "@/constants/categories.constant";
-import { blockType } from "@/constants/text-block.constant";
+import { CATEGORIES } from "@/constants/categories";
+import { BlockType } from "@/constants/text-block";
 import { getPostById } from "@/services/posts/get-post-by-id";
 import typography from "@/styles/typography.module.scss";
 import { formattedDate } from "@/utils/format-date";
@@ -48,7 +48,7 @@ export const BlogPost = async ({ id }: BlogPostProps) => {
         <div className={styles.category}>
           <div className={styles.categoryIconWrapper}>
             <Image
-              src={categories[`${post.category}`].icon}
+              src={CATEGORIES[`${post.category}`].icon}
               alt="Category icon"
               className={styles.avatar}
               fill
@@ -67,14 +67,14 @@ export const BlogPost = async ({ id }: BlogPostProps) => {
       </div>
       <div className={styles.content}>
         {post.content.map((block, index) => {
-          if (block.type === blockType.HEADING) {
+          if (block.type === BlockType.HEADING) {
             return (
               <h2 key={index} className={typography.Heading2}>
                 {block.text}
               </h2>
             );
           }
-          if (block.type === blockType.PARAGRAPH) {
+          if (block.type === BlockType.PARAGRAPH) {
             return (
               <p key={index} className={typography.body1}>
                 {block.text}

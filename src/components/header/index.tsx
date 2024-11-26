@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/button/";
 import { Modal } from "@/components/modal";
 import { NavLink } from "@/components/nav-link";
-import { headerLinks } from "@/constants/links.constant";
+import { HEADER_LINKS } from "@/constants/links";
 import { useModalOpen } from "@/hooks/use-modal-open/use-modal-open";
 import typography from "@/styles/typography.module.scss";
 import { Video } from "@public/video";
@@ -26,7 +26,7 @@ export const Header = () => {
     <header className={styles.header}>
       <h4 className={`${typography.Heading4} ${styles.title}`}>{t("title")}</h4>
       <nav className={`${styles.navbar} ${isBurgerOpen ? styles.open : ""}`}>
-        {headerLinks.map(({ href, title }, index) =>
+        {HEADER_LINKS.map(({ href, title }, index) =>
           <NavLink key={index} href={t(href)}>
             {t(title)}
           </NavLink>)}

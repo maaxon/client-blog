@@ -8,7 +8,7 @@ import { Button } from "@/components/button";
 import { FormInput } from "@/components/form-input";
 import { IconLink } from "@/components/icon-link/";
 import { NavLink } from "@/components/nav-link";
-import { footerLinks, socialLinks } from "@/constants/links.constant";
+import { FOOTER_LINK, SOCIAL_LINKS } from "@/constants/links";
 import typography from "@/styles/typography.module.scss";
 import { sendEmail } from "@/utils/send-email/sendEmail";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -45,7 +45,7 @@ export const Footer = () => {
       <section className={styles.topSection}>
         <h4 className={`${typography.Heading4} ${styles.title}`}>{t("top-title")}</h4>
         <nav className={`${styles.navbar}`}>
-          {footerLinks.map(({ href, title }, index) =>
+          {FOOTER_LINK.map(({ href, title }, index) =>
             <NavLink key={index} href={t(href)}>
               {t(title)}
             </NavLink>,
@@ -82,7 +82,7 @@ export const Footer = () => {
           </p>
         </div>
         <div className={styles.socialNetworkContainer}>
-          {socialLinks.map(({ href, alt, icon }, index) =>
+          {SOCIAL_LINKS.map(({ href, alt, icon }, index) =>
             <IconLink
               key={index}
               alt={t(alt)}

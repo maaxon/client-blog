@@ -3,7 +3,7 @@ import InstagramIcon from "@public/icons/social-networks/instagram-icon.svg";
 import LinkedInIcon from "@public/icons/social-networks/linked-in-icon.svg";
 import TwitterIcon from "@public/icons/social-networks/twitter-icon.svg";
 
-export const headerLinks = [
+export const HEADER_LINKS = [
   {
     href: "nav.home-link.href",
     title: "nav.home-link.title",
@@ -22,7 +22,7 @@ export const headerLinks = [
   },
 ];
 
-export const footerLinks = [
+export const FOOTER_LINK = [
   {
     href: "nav.home.href",
     title: "nav.home.title",
@@ -45,7 +45,7 @@ export const footerLinks = [
   },
 ];
 
-export const socialLinks = [
+export const SOCIAL_LINKS = [
   {
     alt: "social-links.facebook.alt",
     href: "social-links.facebook.href",

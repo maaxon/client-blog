@@ -15,21 +15,9 @@ export const FormTextArea = React.forwardRef<
   const textareaRef =
     (ref as React.RefObject<HTMLTextAreaElement>) || internalRef;
 
-  useLayoutEffect(() => {
-    if (textareaRef.current) {
-      textareaRef.current.style.height = "auto";
-      textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
-    }
-  }, [textareaRef, value]);
 
   const handleOnChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    if (onChange) {
-      onChange(e);
-    }
-    if (textareaRef.current) {
-      textareaRef.current.style.height = "auto";
-      textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
-    }
+      onChange?.(e);
   };
 
   return (

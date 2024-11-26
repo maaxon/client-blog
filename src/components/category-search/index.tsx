@@ -6,8 +6,8 @@ import classNames from "classnames";
 
 import { FormInput } from "@/components/form-input";
 import { Loader } from "@/components/loader";
-import { categories } from "@/constants/categories.constant";
-import { tags } from "@/constants/tags.constatn";
+import { CATEGORIES } from "@/constants/categories";
+import { Tags } from "@/constants/tags";
 import { useDebounce } from "@/hooks/use-debounce/use-debounce";
 import { useService } from "@/hooks/use-service/use-service";
 import { getPostsByCategory } from "@/services/posts/get-posts-by-category";
@@ -44,7 +44,7 @@ export const CategorySearch = ({ category }: CategorySearchProps) => {
     );
   };
 
-  const handleTagSelected = (tag: tags) => () => {
+  const handleTagSelected = (tag: Tags) => () => {
     toggleTag(tag);
   };
 
@@ -89,7 +89,7 @@ export const CategorySearch = ({ category }: CategorySearchProps) => {
         <div className={styles.categoryList}>
           <h2 className={typography.Heading2}>{t("categories.title")}</h2>
           <div className={styles.categoryList}>
-            {Object.entries(categories).map(([categoryKey, { icon }]) => (
+            {Object.entries(CATEGORIES).map(([categoryKey, { icon }]) => (
               <CategoryItem
                 key={categoryKey}
                 categoryKey={categoryKey}
@@ -101,7 +101,7 @@ export const CategorySearch = ({ category }: CategorySearchProps) => {
         <div className={styles.categoryList}>
           <h2 className={typography.Heading2}>{t("tags.title")}</h2>
           <div className={styles.tagList}>
-            {Object.values(tags).map((tag) => (
+            {Object.values(Tags).map((tag) => (
               <div
                 key={tag}
                 className={classNames(

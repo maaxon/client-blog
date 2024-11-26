@@ -1,4 +1,4 @@
-import { tags } from "@/constants/tags.constatn";
+import { Tags } from "@/constants/tags";
 import { Blog, categories } from "@/types";
 
 import { authors_mock } from "./authors-mock";
@@ -48,7 +48,7 @@ export const posts_mock: Blog[] = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
       },
     ],
-    tags: [tags.Business, tags.Marketing, tags.Screen],
+    tags: [Tags.Business, Tags.Marketing, Tags.Screen],
   },
   {
     id: "2",
@@ -94,7 +94,7 @@ export const posts_mock: Blog[] = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
       },
     ],
-    tags: [tags.Technology, tags.Business, tags.Experience],
+    tags: [Tags.Technology, Tags.Business, Tags.Experience],
   },
   {
     id: "3",
@@ -140,7 +140,7 @@ export const posts_mock: Blog[] = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
       },
     ],
-    tags: [tags.Screen, tags.Marketing, tags.Life],
+    tags: [Tags.Screen, Tags.Marketing, Tags.Life],
   },
   {
     id: "4",
@@ -186,7 +186,7 @@ export const posts_mock: Blog[] = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
       },
     ],
-    tags: [tags.Experience, tags.Business, tags.Life],
+    tags: [Tags.Experience, Tags.Business, Tags.Life],
   },
   {
     id: "5",
@@ -232,7 +232,7 @@ export const posts_mock: Blog[] = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
       },
     ],
-    tags: [tags.Technology, tags.Screen, tags.Marketing],
+    tags: [Tags.Technology, Tags.Screen, Tags.Marketing],
   },
   {
     id: "6",
@@ -278,7 +278,7 @@ export const posts_mock: Blog[] = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
       },
     ],
-    tags: [tags.Marketing, tags.Life, tags.Experience],
+    tags: [Tags.Marketing, Tags.Life, Tags.Experience],
   },
   {
     id: "7",
@@ -324,7 +324,7 @@ export const posts_mock: Blog[] = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
       },
     ],
-    tags: [tags.Business, tags.Screen, tags.Technology],
+    tags: [Tags.Business, Tags.Screen, Tags.Technology],
   },
   {
     id: "8",
@@ -370,7 +370,7 @@ export const posts_mock: Blog[] = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
       },
     ],
-    tags: [tags.Experience, tags.Marketing, tags.Screen],
+    tags: [Tags.Experience, Tags.Marketing, Tags.Screen],
   },
   {
     id: "9",
@@ -416,7 +416,7 @@ export const posts_mock: Blog[] = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
       },
     ],
-    tags: [tags.Technology, tags.Life, tags.Business],
+    tags: [Tags.Technology, Tags.Life, Tags.Business],
   },
   {
     id: "10",
@@ -462,7 +462,7 @@ export const posts_mock: Blog[] = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
       },
     ],
-    tags: [tags.Screen, tags.Business, tags.Experience],
+    tags: [Tags.Screen, Tags.Business, Tags.Experience],
   },
   {
     id: "11",
@@ -508,7 +508,7 @@ export const posts_mock: Blog[] = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
       },
     ],
-    tags: [tags.Life, tags.Marketing, tags.Technology],
+    tags: [Tags.Life, Tags.Marketing, Tags.Technology],
   },
   {
     id: "12",
@@ -554,7 +554,7 @@ export const posts_mock: Blog[] = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
       },
     ],
-    tags: [tags.Experience, tags.Screen, tags.Marketing],
+    tags: [Tags.Experience, Tags.Screen, Tags.Marketing],
   },
 ];
 

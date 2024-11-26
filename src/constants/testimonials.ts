@@ -2,7 +2,7 @@ import Avatar1 from "@public/avatars/testimonials/testimonial-avatar-1.jpeg";
 import Avatar2 from "@public/avatars/testimonials/testimonial-avatar-2.jpeg";
 import Avatar3 from "@public/avatars/testimonials/testimonial-avatar-3.jpeg";
 
-export const testimonials = {
+export const TESTIMONIALS = {
   "testimonial-1": {
     avatar: Avatar1,
   },

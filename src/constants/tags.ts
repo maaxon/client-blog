@@ -1,4 +1,4 @@
-export enum tags {
+export enum Tags {
   Business = "Business",
   Experience = "Experience",
   Screen = "Screen",

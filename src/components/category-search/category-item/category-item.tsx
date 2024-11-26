@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
+import cn from "classnames";
 
 import { Link } from "@/i18n/routing";
 import typography from "@/styles/typography.module.scss";
@@ -11,10 +13,11 @@ import { CategoryItemProps } from "./category-item.type";
 
 export const CategoryItem = ({ categoryKey, icon }: CategoryItemProps) => {
   const t = useTranslations("CategorySelector");
+  const { category } = useParams<{ category: string }>();
 
   return (
     <Link
-      className={styles.card}
+      className={cn(styles.card, { [styles.active]: category === categoryKey })}
       href={`/category/${categoryKey}`}
       key={categoryKey}
     >

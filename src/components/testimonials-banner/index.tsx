@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import { testimonials } from "@/constants/testimonials.constant";
+import { TESTIMONIALS } from "@/constants/testimonials";
 import { useSlider } from "@/hooks/use-slider/use-slider";
 import typography from "@/styles/typography.module.scss";
 
@@ -13,7 +13,7 @@ const NEXT_SYMBOL = String.fromCharCode(8594);
 const PREV_SYMBOL = String.fromCharCode(8592);
 
 export const TestimonialsBanner = () => {
-  const { currentIndex, nextSlide, prevSlide } = useSlider(testimonials);
+  const { currentIndex, nextSlide, prevSlide } = useSlider(TESTIMONIALS);
   const t = useTranslations("Testimonials");
 
   return (
@@ -25,7 +25,7 @@ export const TestimonialsBanner = () => {
       </div>
       <div className={styles.carousel}>
         <div className={styles.slides} data-index={currentIndex}>
-          {Object.entries(testimonials).map(([testimonial, { avatar }]) => (
+          {Object.entries(TESTIMONIALS).map(([testimonial, { avatar }]) => (
             <div key={testimonial} className={styles.slide}>
               <p className={typography.Heading4}>{t(`${testimonial}.text`)}</p>
 
