@@ -2,7 +2,7 @@
 
 import { ChangeEvent, useState } from "react";
 import { useTranslations } from "next-intl";
-import classNames from "classnames";
+import cn from "classnames";
 
 import { FormInput } from "@/components/form-input";
 import { Loader } from "@/components/loader";
@@ -105,7 +105,7 @@ export const CategorySearch = ({ category }: CategorySearchProps) => {
             {Object.values(Tags).map((tag) => (
               <div
                 key={tag}
-                className={classNames(
+                className={cn(
                   typography.body2,
                   styles.tagItem,
                   isSelected(tag) && styles.selectedTag,

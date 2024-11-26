@@ -1,5 +1,5 @@
 import Image from "next/image";
-import classNames from "classnames";
+import cn from "classnames";
 
 import { Link } from "@/i18n/routing";
 import typography from "@/styles/typography.module.scss";
@@ -15,7 +15,7 @@ export function PostCard({ id, title, description, image, category }: PostCardPr
           <Image src={image} alt="post-image" className={styles.image} fill />
         </div>
         <div className={styles.content}>
-          <p className={classNames(typography.cap, styles.category)}>{category.toUpperCase()}</p>
+          <p className={cn(typography.cap, styles.category)}>{category.toUpperCase()}</p>
           <h4 className={typography.heading2} data-testid="post-title">{title}</h4>
           <p>{description}</p>
         </div>

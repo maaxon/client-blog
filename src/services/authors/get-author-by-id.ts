@@ -1,9 +1,9 @@
 import { Author } from "@/types";
 import { getBaseUrl } from "@/utils/get-base-url/get-base-url";
 
-export const getAuthorById = async (id: string, url?: string) => {
+export const getAuthorById = async (id: string) => {
   try {
-    const baseUrl = url || getBaseUrl();
+    const baseUrl = getBaseUrl();
 
     const response = await fetch(`${baseUrl}/api/authors/${id}`);
     const author: Author = await response.json();

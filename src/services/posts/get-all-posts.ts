@@ -1,17 +1,15 @@
 import { Blog } from "@/types";
 import { getBaseUrl } from "@/utils/get-base-url/get-base-url";
 
-export const getPostById = async (id: string) => {
-
+export const getAllPosts = async () => {
   try {
     const baseUrl = getBaseUrl();
 
-    const response = await fetch(`${baseUrl}/api/posts/${id}`);
-    const post: Blog = await response.json();
+    const response = await fetch(`${baseUrl}/api/posts`);
+    const posts: Blog[] = await response.json();
 
-    return post;
+    return posts;
   } catch (error) {
     throw new Error(`HandledError: ${error}`);
   }
 };
-

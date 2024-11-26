@@ -26,20 +26,20 @@ const inter = Inter({
 
 type RootLayoutProps = Readonly<{
   children: React.ReactNode;
-  params: Promise<{ locale: string; }>;
+  params: { locale: string; };
 }>;
 
 
 export default async function LocaleLayout({ children, params }: RootLayoutProps) {
   const messages = await getMessages();
-  const { locale } = await params;
+  const { locale } = params;
   return (
     <html lang={locale}>
     <body className={`${sen.variable} ${inter.variable}`}>
     <NextIntlClientProvider messages={messages}>
-      <Header/>
+      <Header />
       {children}
-      <Footer/>
+      <Footer />
     </NextIntlClientProvider>
     </body>
     </html>

@@ -2,15 +2,15 @@
 
 import { useForm } from "react-hook-form";
 import { useTranslations } from "next-intl";
-import classNames from "classnames";
+import cn from "classnames";
 
 import { Button } from "@/components/button/";
-import { FormInput } from "@/components/form-input";
-import { FormTextArea } from "@/components/form-text-area";
 import typography from "@/styles/typography.module.scss";
 import { ContactFormData } from "@/types";
 import { sendEmail } from "@/utils/send-email/sendEmail";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { FormTextArea } from "@maaxxon/client-blog-ui-kit";
+import { FormInput } from "@maaxxon/client-blog-ui-kit";
 
 import styles from "./contact-form.module.scss";
 import { schema } from "./form-schema";
@@ -24,7 +24,7 @@ export const ContactForm = () => {
     formState: { errors },
   } = useForm<ContactFormData>({
     resolver: zodResolver(schema),
-    mode: "onBlur",
+    mode: "onChange",
   });
 
   const onSubmit = (data: ContactFormData) => {
@@ -41,7 +41,7 @@ export const ContactForm = () => {
           className={styles.input}
         />
         {!!errors.name && (
-          <p className={classNames(typography.body1, styles.error)} data-testid="name-error">
+          <p className={cn(typography.body1, styles.error)} data-testid="name-error">
             {errors.name.message}
           </p>
         )}
@@ -55,20 +55,20 @@ export const ContactForm = () => {
           className={styles.input}
         />
         {!!errors.email && (
-          <p className={classNames(typography.body1, styles.error)} data-testid="email-error">
+          <p className={cn(typography.body1, styles.error)} data-testid="email-error">
             {errors.email.message}
           </p>
         )}
       </div>
 
-      <div className={classNames(styles.inputContainer)}>
+      <div className={cn(styles.inputContainer)}>
         <FormTextArea
           {...register("message")}
           placeholder={t("input.placeholder.message")}
-          className={classNames(styles.input)}
+          className={cn(styles.input)}
         />
         {!!errors.message && (
-          <p className={classNames(typography.body1, styles.error)} data-testid="message-error">
+          <p className={cn(typography.body1, styles.error)} data-testid="message-error">
             {errors.message.message}
           </p>
         )}

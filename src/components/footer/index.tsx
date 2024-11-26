@@ -2,16 +2,16 @@
 
 import { useForm } from "react-hook-form";
 import { useTranslations } from "next-intl";
-import classNames from "classnames";
+import cn from "classnames";
 
 import { Button } from "@/components/button";
-import { FormInput } from "@/components/form-input";
 import { IconLink } from "@/components/icon-link/";
 import { NavLink } from "@/components/nav-link";
 import { FOOTER_LINK, SOCIAL_LINKS } from "@/constants/links";
 import typography from "@/styles/typography.module.scss";
 import { sendEmail } from "@/utils/send-email/sendEmail";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { FormInput } from "@maaxxon/client-blog-ui-kit";
 
 import { EmailData } from "./footer.config";
 import styles from "./footer.module.scss";
@@ -28,7 +28,7 @@ export const Footer = () => {
     formState: { errors },
   } = useForm<FooterFormData>({
     resolver: zodResolver(schema),
-    mode: "onBlur",
+    mode: "onChange",
   });
 
   const onSubmit = (data: FooterFormData) => {
@@ -53,7 +53,7 @@ export const Footer = () => {
         </nav>
       </section>
       <section className={styles.middleSection}>
-        <h2 className={classNames(typography.heading2, styles.title)}>
+        <h2 className={cn(typography.heading2, styles.title)}>
           {t("middle-title")}
         </h2>
         <form className={styles.inputContainer} onSubmit={handleSubmit(onSubmit)}>
@@ -65,7 +65,7 @@ export const Footer = () => {
             data-testid="footer-email"
           />
           {!!errors.email && (
-            <p className={classNames(typography.body1, styles.error)} data-testid="footer-error">
+            <p className={cn(typography.body1, styles.error)} data-testid="footer-error">
               {errors.email.message}
             </p>
           )}

@@ -14,8 +14,8 @@ export const usePagePosts = () => {
 
   const prevPage = () => setPage(prevPage => prevPage - 1);
   const nextPage = () => setPage(prevPage => prevPage + 1);
-  const isDisabledPrev = () => page === START_PAGE;
-  const isDisabledNext = () => !data?.hasMore;
+  const isDisabledPrev = page === START_PAGE;
+  const isDisabledNext = !data?.hasMore;
 
   return {
     isLoading, posts: data?.posts, prevPage, nextPage, isDisabledPrev, isDisabledNext,

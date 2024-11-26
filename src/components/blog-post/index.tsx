@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { getLocale } from "next-intl/server";
-import classNames from "classnames";
+import cn from "classnames";
 
 import { NavLink } from "@/components/nav-link";
 import { CATEGORIES } from "@/constants/categories";
@@ -13,7 +13,7 @@ import styles from "./blog-post.module.scss";
 import { BlogPostProps } from "./blog-post.types";
 
 export const BlogPost = async ({ id }: BlogPostProps) => {
-  const post = getPostById(id);
+  const post = await getPostById(id);
   const locale = await getLocale();
 
   if(!post) return <h1>Post not found</h1>
@@ -34,11 +34,11 @@ export const BlogPost = async ({ id }: BlogPostProps) => {
             <div className={styles.profileText}>
               <NavLink
                 href={`/author/${post.author.id}`}
-                className={classNames(typography.heading3, styles.authorName)}
+                className={cn(typography.heading3, styles.authorName)}
               >
                 {post.author.name}
               </NavLink>
-              <p className={classNames(typography.body1, styles.publishDate)}>
+              <p className={cn(typography.body1, styles.publishDate)}>
                 {formattedDate(post.publish_date, locale)}
               </p>
             </div>

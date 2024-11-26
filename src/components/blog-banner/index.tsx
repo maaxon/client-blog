@@ -9,11 +9,11 @@ import { formattedDate } from "@/utils/format-date";
 
 import styles from "./blog-banner.module.scss";
 
-export async function BlogBanner() {
+export const BlogBanner = async () => {
   const t = await getTranslations("FeaturePost");
   const locale = await getLocale();
 
-  const post = getFeaturedPost();
+  const post = await getFeaturedPost();
 
   return (
     <section className={styles.container}>
@@ -44,4 +44,4 @@ export async function BlogBanner() {
       </section>
     </section>
   );
-}
+};

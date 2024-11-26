@@ -5,7 +5,7 @@ import { Button } from "@/components/button/";
 import { NavLink } from "@/components/nav-link";
 import { Link } from "@/i18n/routing";
 import { getFeaturedPost } from "@/services/posts/get-featured-post";
-import { getFirstFourPosts } from "@/services/posts/get-last-four-posts";
+import { getFirstFourPosts } from "@/services/posts/get-first-four-posts";
 import typography from "@/styles/typography.module.scss";
 import { formattedDate } from "@/utils/format-date";
 
@@ -15,8 +15,8 @@ export const PostsBanner = async () => {
   const t = await getTranslations("PostsBanner");
   const locale = await getLocale();
 
-  const posts = getFirstFourPosts();
-  const post = getFeaturedPost();
+  const posts = await getFirstFourPosts();
+  const post = await getFeaturedPost();
 
   return (
     <div className={styles.container}>
@@ -33,23 +33,25 @@ export const PostsBanner = async () => {
               fill
             />
           </div>
+
           <div className={styles.featuredContent}>
             <p className={`${typography.label} ${styles.metaInfo}`}>
               {t("by")}
-              <NavLink
-                className={styles.author}
-                href={`/author/${post.author.id}`}
-              >
+              <span
+                className={styles.author}>
                 {post.author.name}
-              </NavLink>
+              </span>
               {t("separator")}
               <span>{formattedDate(post.publish_date, locale)}</span>
             </p>
+
             <h4 className={typography.heading3}>Test title</h4>
+
             <p className={`${typography.body1} ${styles.description}`}>
               {post.description}
             </p>
           </div>
+
           <Button href={`/blog/${post.id}`}>
             {t("feature-post.button.title")}
           </Button>
@@ -69,9 +71,7 @@ export const PostsBanner = async () => {
           {posts.map(({ id, author, title, publish_date }) => (
             <Link key={id} className={styles.allItem} href={`/blog/${id}`}>
               <p className={`${typography.label} ${styles.metaInfo}`}> {t("by")}
-                <span
-                  className={styles.author}
-                >
+                <span className={styles.author}>
                   {author.name}
                 </span>
                 {t("separator")}

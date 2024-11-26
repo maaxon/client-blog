@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import cn from "classnames";
 
 import { Button } from "@/components/button/";
+import { LANGUAGES } from "@/components/header/config";
 import { Modal } from "@/components/modal";
 import { NavLink } from "@/components/nav-link";
 import { HEADER_LINKS } from "@/constants/links";
@@ -15,7 +16,6 @@ import typography from "@/styles/typography.module.scss";
 
 import { Video } from "./video/video";
 import styles from "./header.module.scss";
-import { LANGUAGES } from "@/components/header/config";
 
 export const Header = () => {
   const { isModalOpen, handleModalOpen, handleModalClose } = useModalOpen();

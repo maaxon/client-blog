@@ -60,3 +60,8 @@ export interface ContactFormData {
   email: string;
   message: string;
 }
+
+export interface PostResponse{
+  posts: Blog[],
+  hasMore: boolean
+}

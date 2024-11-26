@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 
-import { NavLink } from "@/components/nav-link";
 import { Link } from "@/i18n/routing";
 import { getRelatedPosts } from "@/services/posts/get-related-posts";
 import typography from "@/styles/typography.module.scss";
@@ -14,7 +13,9 @@ export const RelatedPosts = async ({ id }: RelatedPostsProps) => {
   const t = await getTranslations("PostsBanner");
   const locale = await getLocale();
 
-  const posts = getRelatedPosts(id);
+  const posts = await getRelatedPosts(id);
+
+  if (posts.length === 0) return null;
 
   return (
     <div className={styles.container}>
@@ -35,12 +36,11 @@ export const RelatedPosts = async ({ id }: RelatedPostsProps) => {
                 {" "}
                 <p className={`${typography.body1} ${styles.metaInfo}`}>
                   {t("by")}
-                  <NavLink
+                  <span
                     className={styles.author}
-                    href={`/author/${author.id}`}
                   >
                     {author.name}
-                  </NavLink>
+                  </span>
                   {t("separator")}
                   <span>{formattedDate(new Date(publish_date), locale)}</span>
                 </p>

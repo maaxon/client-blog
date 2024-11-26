@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
-import { IconLink } from "@/components/icon-link";
 import { Link } from "@/i18n/routing";
 import { getFirstFourAuthors } from "@/services/authors/get-first-four-authors";
 import typography from "@/styles/typography.module.scss";
@@ -23,15 +22,15 @@ export const ListOfAuthors = async () => {
       <div className={styles.list}>
         {authors.map(
           ({
-            avatar,
-            id,
-            name,
-            description,
-            facebook,
-            instagram,
-            linkedin,
-            twitter,
-          }) => (
+             avatar,
+             id,
+             name,
+             description,
+             facebook,
+             instagram,
+             linkedin,
+             twitter,
+           }) => (
             <Link key={id} className={styles.card} href={`/author/${id}`}>
               <div className={styles.avatarWrapper}>
                 <Image
@@ -49,31 +48,27 @@ export const ListOfAuthors = async () => {
               </div>
               <div className={styles.socials}>
                 {facebook && (
-                  <IconLink
-                    icon={FacebookIcon}
+                  <Image
+                    src={FacebookIcon}
                     alt={`${name}'s facebook icon`}
-                    href={facebook}
                   />
                 )}
                 {twitter && (
-                  <IconLink
-                    icon={TwitterIcon}
+                  <Image
+                    src={TwitterIcon}
                     alt={`${name}'s twitter icon`}
-                    href={twitter}
                   />
                 )}
                 {instagram && (
-                  <IconLink
-                    icon={InstagramIcon}
+                  <Image
+                    src={InstagramIcon}
                     alt={`${name}'s instagram icon`}
-                    href={instagram}
                   />
                 )}
                 {linkedin && (
-                  <IconLink
-                    icon={LinkedInIcon}
+                  <Image
+                    src={LinkedInIcon}
                     alt={`${name}'s linked in icon`}
-                    href={linkedin}
                   />
                 )}
               </div>

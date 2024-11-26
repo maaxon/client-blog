@@ -15,9 +15,11 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@hookform/resolvers": "^3.9.1",
+    "@maaxxon/client-blog-ui-kit": "^1.0.2",
     "leaflet": "^1.9.4",
     "next": "14.2.10",
     "next-intl": "^3.19.1",
+    "normalize.css": "^8.0.1",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.53.1",
@@ -48,5 +50,6 @@
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }

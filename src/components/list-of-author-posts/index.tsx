@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import classNames from "classnames";
+import cn from "classnames";
 
 import { PostCard } from "@/components/post-card";
 import { getPostsByAuthorId } from "@/services/posts/get-posts-by-author-id";
@@ -15,7 +15,7 @@ export const ListOfAuthorPosts = async ({ id }: ListOfAuthorPostsProps) => {
 
   return posts.length !== 0 ? (
     <div className={styles.container}>
-      <h1 className={classNames(typography.heading1, styles.title)}>
+      <h1 className={cn(typography.heading1, styles.title)}>
         {t("title")}
       </h1>
       <div className={styles.list}>

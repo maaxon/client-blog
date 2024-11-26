@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import cn from "classnames";
 
 import { BlogBanner } from "@/components/blog-banner";
 import { CategorySelector } from "@/components/category-selector";
@@ -13,7 +13,7 @@ export default async function BlogPage() {
     <>
       <BlogBanner/>
       <main className={styles.container}>
-          <h2 className={classNames(typography.heading1,styles.title)}>All posts</h2>
+          <h2 className={cn(typography.heading1,styles.title)}>All posts</h2>
           <PostList/>
       </main>
       <CategorySelector/>

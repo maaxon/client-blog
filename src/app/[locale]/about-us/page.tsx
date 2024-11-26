@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import classNames from "classnames";
+import cn from "classnames";
 
 import { JoinOurTeamBanner } from "@/components/join-our-team-banner";
 import { ListOfAuthors } from "@/components/list-of-authors";
@@ -25,7 +25,7 @@ export default async function AboutUs() {
             <h1 className={typography.heading1}>{t("banner.header.title")}</h1>
           </div>
           <div className={styles.bannerTopDescription}>
-            <p className={classNames(styles.body1, styles.bannerDescription)}>
+            <p className={cn(styles.body1, styles.bannerDescription)}>
               {t("banner.header.description")}
             </p>
           </div>

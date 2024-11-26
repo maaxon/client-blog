@@ -1,5 +1,5 @@
 import Image from "next/image";
-import classNames from "classnames";
+import cn from "classnames";
 
 import { IconLink } from "@/components/icon-link/";
 import { getAuthorById } from "@/services/authors/get-author-by-id";
@@ -27,7 +27,7 @@ export const AuthorBanner = async ({ id }: AuthorBannerProps) => {
       </div>
       <div className={styles.content}>
         <h1 className={typography.heading1}>{author.page.title}</h1>
-        <p className={classNames(typography.body1, styles.description)}>
+        <p className={cn(typography.body1, styles.description)}>
           {author.page.description}
         </p>
         <div className={styles.socials}>
