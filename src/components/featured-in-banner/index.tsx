@@ -19,7 +19,7 @@ export const FeaturedInBanner = async () => {
         <p className={`${typography.body2} ${styles.textTop}`}>
           {t("text-top")}
         </p>
-        <h4 className={typography.Heading4}>{t("text-bottom")}</h4>
+        <h4 className={typography.heading4}>{t("text-bottom")}</h4>
       </div>
       <Image alt={t("logo-1.alt")} src={Logo1} />
       <Image alt={t("logo-2.alt")} src={Logo2} />

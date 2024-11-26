@@ -26,7 +26,7 @@ export const AuthorBanner = async ({ id }: AuthorBannerProps) => {
         />
       </div>
       <div className={styles.content}>
-        <h1 className={typography.Heading1}>{author.page.title}</h1>
+        <h1 className={typography.heading1}>{author.page.title}</h1>
         <p className={classNames(typography.body1, styles.description)}>
           {author.page.description}
         </p>

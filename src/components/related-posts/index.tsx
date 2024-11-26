@@ -18,7 +18,7 @@ export const RelatedPosts = async ({ id }: RelatedPostsProps) => {
 
   return (
     <div className={styles.container}>
-      <h2 className={typography.Heading2}>{t("related-posts-title")}</h2>
+      <h2 className={typography.heading2}>{t("related-posts-title")}</h2>
       <div className={styles.content}>
         {posts.map(
           ({ id, title_image, author, publish_date, title, description }) => (
@@ -44,7 +44,7 @@ export const RelatedPosts = async ({ id }: RelatedPostsProps) => {
                   {t("separator")}
                   <span>{formattedDate(new Date(publish_date), locale)}</span>
                 </p>
-                <h3 className={typography.Heading3}>{title}</h3>
+                <h3 className={typography.heading3}>{title}</h3>
                 <p className={`${typography.body1}`}>{description}</p>
               </div>
             </Link>

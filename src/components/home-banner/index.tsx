@@ -28,7 +28,7 @@ export const HomeBanner = async () => {
           {t("posted-on")}
           <span className={styles.category}>{"education"}</span>
         </p>
-        <h1 className={`${typography.Display} ${styles.title}`}>
+        <h1 className={`${typography.display} ${styles.title}`}>
           {"How to renovate the front"}
         </h1>
         <p className={`${typography.body1} ${styles.metaInfo}`}>

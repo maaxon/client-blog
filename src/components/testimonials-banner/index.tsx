@@ -20,14 +20,14 @@ export const TestimonialsBanner = () => {
     <div className={styles.container}>
       <div className={styles.header}>
         <p className={typography.cap}>{t("header")}</p>
-        <h2 className={typography.Heading2}>{t("title")}</h2>
+        <h2 className={typography.heading2}>{t("title")}</h2>
         <p className={typography.body1}>{t("description")}</p>
       </div>
       <div className={styles.carousel}>
         <div className={styles.slides} data-index={currentIndex}>
           {Object.entries(TESTIMONIALS).map(([testimonial, { avatar }]) => (
             <div key={testimonial} className={styles.slide}>
-              <p className={typography.Heading4}>{t(`${testimonial}.text`)}</p>
+              <p className={typography.heading4}>{t(`${testimonial}.text`)}</p>
 
               <div className={styles.userInfo}>
                 <div className={styles.avatarWrapper}>
@@ -39,7 +39,7 @@ export const TestimonialsBanner = () => {
                   />
                 </div>
                 <div>
-                  <h3 className={typography.Heading4} data-testid={`testimonial-name`}>
+                  <h3 className={typography.heading4} data-testid={`testimonial-name`}>
                     {t(`${testimonial}.name`)}
                   </h3>
                   <p className={`${typography.body1} ${styles.location}`}>

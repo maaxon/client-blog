@@ -19,7 +19,7 @@ export const ListOfAuthors = async () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={typography.Heading2}>{t("title")}</h2>
+      <h2 className={typography.heading2}>{t("title")}</h2>
       <div className={styles.list}>
         {authors.map(
           ({
@@ -42,7 +42,7 @@ export const ListOfAuthors = async () => {
                 />
               </div>
               <div className={styles.text}>
-                <h3 className={typography.Heading3}>{name}</h3>
+                <h3 className={typography.heading3}>{name}</h3>
                 <p className={`${typography.body2} ${styles.description}`}>
                   {description}
                 </p>

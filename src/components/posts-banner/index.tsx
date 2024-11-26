@@ -22,7 +22,7 @@ export const PostsBanner = async () => {
     <div className={styles.container}>
       <div className={styles.featuredContainer}>
         <div className={styles.featuredHeader}>
-          <h3 className={typography.Heading2}>{t("feature-post.title")}</h3>
+          <h3 className={typography.heading2}>{t("feature-post.title")}</h3>
         </div>
         <div className={styles.featuredPost}>
           <div className={styles.imageWrapper}>
@@ -45,7 +45,7 @@ export const PostsBanner = async () => {
               {t("separator")}
               <span>{formattedDate(post.publish_date, locale)}</span>
             </p>
-            <h4 className={typography.Heading3}>Test title</h4>
+            <h4 className={typography.heading3}>Test title</h4>
             <p className={`${typography.body1} ${styles.description}`}>
               {post.description}
             </p>
@@ -57,7 +57,7 @@ export const PostsBanner = async () => {
       </div>
       <div className={styles.allContainer}>
         <div className={styles.allHeader}>
-          <h3 className={typography.Heading2}>{t("all-posts.title")}</h3>
+          <h3 className={typography.heading2}>{t("all-posts.title")}</h3>
           <NavLink
             className={`${typography.body1} ${styles.link}`}
             href={t("all-posts.link.href")}
@@ -77,7 +77,7 @@ export const PostsBanner = async () => {
                 {t("separator")}
                 <span>{formattedDate(publish_date, locale)}</span>
               </p>
-              <h5 className={typography.Heading4}>{title}</h5>
+              <h5 className={typography.heading4}>{title}</h5>
             </Link>
           ))}
         </div>

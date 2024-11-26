@@ -15,7 +15,7 @@ export default async function ContactUs() {
     <div className={styles.page}>
       <div className={styles.header}>
         <p className={typography.cap3}>{t("header.header")}</p>
-        <h1 className={typography.Heading1}>{t("header.title")}</h1>
+        <h1 className={typography.heading1}>{t("header.title")}</h1>
         <p className={classNames(typography.body1, styles.headerDescription)}>
           {t("description")}
         </p>
@@ -32,10 +32,10 @@ export default async function ContactUs() {
             {t("workingHours.header")}
           </p>
           <div className={styles.informationContent}>
-            <h5 className={typography.Heading5}>
+            <h5 className={typography.heading5}>
               {t("workingHours.content.days")}
             </h5>
-            <h5 className={typography.Heading5}>
+            <h5 className={typography.heading5}>
               {t("workingHours.content.hours")}
             </h5>
             <p className={classNames(typography.body2, styles.lightText)}>
@@ -54,7 +54,7 @@ export default async function ContactUs() {
             {t("contactUs.header")}
           </p>
           <div className={styles.informationContent}>
-            <h5 className={typography.Heading5}>
+            <h5 className={typography.heading5}>
               {t("contactUs.content.phone")}
             </h5>
             <p className={classNames(typography.body2, styles.lightText)}>

@@ -55,13 +55,8 @@ export type Category =
   | categories.Technology;
 
 
-export interface PostResponse{
-  posts: Blog[],
-  hasMore: boolean
-}
-
-export type ContactFormData = {
+export interface ContactFormData {
   name: string;
   email: string;
   message: string;
-};
+}

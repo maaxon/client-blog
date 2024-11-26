@@ -22,7 +22,7 @@ export default async function AboutUs() {
         <div className={styles.bannerTop}>
           <div className={styles.bannerTopHeader}>
             <p className={typography.cap3}>{t("banner.header.heading")}</p>
-            <h1 className={typography.Heading1}>{t("banner.header.title")}</h1>
+            <h1 className={typography.heading1}>{t("banner.header.title")}</h1>
           </div>
           <div className={styles.bannerTopDescription}>
             <p className={classNames(styles.body1, styles.bannerDescription)}>
@@ -40,19 +40,19 @@ export default async function AboutUs() {
             />
             <div className={styles.statistics}>
               <div className={styles.statisticsItem}>
-                <h1 className={typography.Display}>12+</h1>
+                <h1 className={typography.display}>12+</h1>
                 <p className={typography.body1}>
                   {t("statistics.blogsPublished")}
                 </p>
               </div>
               <div className={styles.statisticsItem}>
-                <h1 className={typography.Display}>18K+</h1>
+                <h1 className={typography.display}>18K+</h1>
                 <p className={typography.body1}>
                   {t("statistics.viewsOnFinsweet")}
                 </p>
               </div>
               <div className={styles.statisticsItem}>
-                <h1 className={typography.Display}>30K+</h1>
+                <h1 className={typography.display}>30K+</h1>
                 <p className={typography.body1}>
                   {t("statistics.totalActiveUsers")}
                 </p>
@@ -68,7 +68,7 @@ export default async function AboutUs() {
               <p className={`${typography.cap} ${styles.bannerHeading}`}>
                 {t("missionVision.mission.heading")}
               </p>
-              <h2 className={`${typography.Heading2}`}>
+              <h2 className={`${typography.heading2}`}>
                 {t("missionVision.mission.title")}
               </h2>
               <p className={`${typography.body1} ${styles.bannerDescription}`}>
@@ -80,7 +80,7 @@ export default async function AboutUs() {
               <p className={`${typography.cap} ${styles.bannerHeading}`}>
                 {t("missionVision.vision.heading")}
               </p>
-              <h3 className={`${typography.Heading3}`}>
+              <h3 className={`${typography.heading3}`}>
                 {t("missionVision.vision.title")}
               </h3>
               <p className={`${typography.body1} ${styles.bannerDescription}`}>
@@ -92,8 +92,8 @@ export default async function AboutUs() {
       </div>
       <div className={styles.content}>
         <div className={styles.contentDescription}>
-          <h2 className={typography.Heading2}>{t("content.ourTeamTitle")}</h2>
-          <h4 className={typography.Heading4}>
+          <h2 className={typography.heading2}>{t("content.ourTeamTitle")}</h2>
+          <h4 className={typography.heading4}>
             {t("content.ourTeamSubtitle")}
           </h4>
           <p className={typography.body1}>{t("content.ourTeamDescription")}</p>
@@ -127,10 +127,10 @@ export default async function AboutUs() {
           />
         </div>
         <div className={styles.contentDescription}>
-          <h2 className={typography.Heading2}>
+          <h2 className={typography.heading2}>
             {t("content.whyWeStartedTitle")}
           </h2>
-          <h4 className={typography.Heading4}>
+          <h4 className={typography.heading4}>
             {t("content.whyWeStartedSubtitle")}
           </h4>
           <p className={typography.body1}>

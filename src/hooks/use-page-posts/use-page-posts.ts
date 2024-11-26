@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 
@@ -10,8 +10,7 @@ import { START_PAGE } from "./config";
 
 export const usePagePosts = () => {
   const [page, setPage] = useState(START_PAGE);
-  console.log("Call")
-  const {isLoading,data} = useService(getPostsByPage,[page]);
+  const { isLoading, data } = useService(getPostsByPage, [page]);
 
   const prevPage = () => setPage(prevPage => prevPage - 1);
   const nextPage = () => setPage(prevPage => prevPage + 1);

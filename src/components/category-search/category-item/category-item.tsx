@@ -25,7 +25,7 @@ export const CategoryItem = ({ categoryKey, icon }: CategoryItemProps) => {
         <Image src={icon} alt={t(`${categoryKey}.icon.alt`)} />
       </div>
       <div className={styles.text}>
-        <h3 className={typography.Heading3} data-testid="category-link">{t(`${categoryKey}.title`)}</h3>
+        <h3 className={typography.heading3} data-testid="category-link">{t(`${categoryKey}.title`)}</h3>
       </div>
     </Link>
   );

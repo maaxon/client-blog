@@ -2,16 +2,20 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import cn from "classnames";
 
 import { Button } from "@/components/button/";
 import { Modal } from "@/components/modal";
 import { NavLink } from "@/components/nav-link";
 import { HEADER_LINKS } from "@/constants/links";
 import { useModalOpen } from "@/hooks/use-modal-open/use-modal-open";
+import { usePathname, useRouter } from "@/i18n/routing";
+import { Link } from "@/i18n/routing";
 import typography from "@/styles/typography.module.scss";
-import { Video } from "@public/video";
 
+import { Video } from "./video/video";
 import styles from "./header.module.scss";
+import { LANGUAGES } from "@/components/header/config";
 
 export const Header = () => {
   const { isModalOpen, handleModalOpen, handleModalClose } = useModalOpen();
@@ -22,10 +26,25 @@ export const Header = () => {
     setBurgerOpen(!isBurgerOpen);
   };
 
+  const pathname = usePathname();
+  const router = useRouter();
+  const changeLanguage = (language: string) => () => {
+    router.replace(pathname, { locale: language });
+  };
+
   return (
     <header className={styles.header}>
-      <h4 className={`${typography.Heading4} ${styles.title}`}>{t("title")}</h4>
-      <nav className={`${styles.navbar} ${isBurgerOpen ? styles.open : ""}`}>
+      <Link href={"/"}>
+        <h4 className={cn(typography.heading4, styles.title)}>{t("title")}</h4>
+      </Link>
+
+      <div className={styles.languages}>
+        {LANGUAGES.map(lang => <span key={lang}
+                                     className={cn({ [styles.active]: pathname.includes(lang) })}
+                                     onClick={changeLanguage(lang)}>{lang}</span>)}
+      </div>
+
+      <nav className={cn(styles.navbar, { [styles.open]: isBurgerOpen })}>
         {HEADER_LINKS.map(({ href, title }, index) =>
           <NavLink key={index} href={t(href)}>
             {t(title)}

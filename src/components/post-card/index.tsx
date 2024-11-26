@@ -16,7 +16,7 @@ export function PostCard({ id, title, description, image, category }: PostCardPr
         </div>
         <div className={styles.content}>
           <p className={classNames(typography.cap, styles.category)}>{category.toUpperCase()}</p>
-          <h4 className={typography.Heading2} data-testid="post-title">{title}</h4>
+          <h4 className={typography.heading2} data-testid="post-title">{title}</h4>
           <p>{description}</p>
         </div>
       </section>

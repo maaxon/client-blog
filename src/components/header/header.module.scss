@@ -30,6 +30,20 @@
     }
   }
 
+  .languages{
+    display: flex;
+    gap: 10px;
+    text-transform: capitalize;
+
+    span:hover, .active{
+      color: $yellow;
+    }
+
+    .active{
+      color: $yellow;
+    }
+  }
+
   .navbar {
     display: flex;
     align-items: center;

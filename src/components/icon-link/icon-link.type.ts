@@ -1,6 +1,7 @@
-export type IconLinkProps = {
+import { LinkProps } from "next/link";
+
+export interface IconLinkProps extends LinkProps{
   className?: string;
-  href: string;
   alt: string;
   icon: string;
-};
+}

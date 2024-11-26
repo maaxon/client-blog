@@ -17,15 +17,16 @@ import { CategoryItem } from "./category-item/category-item";
 import { CategoryPostItem } from "./category-post-item/category-post-item";
 import styles from "./category-search.module.scss";
 import { CategorySearchProps, CategorySearchState } from "./category-search.type";
+import { DEBOUNCE_DELAY } from "./config";
 
 export const CategorySearch = ({ category }: CategorySearchProps) => {
   const [{ tagValue, selectedTags }, setState] = useState<CategorySearchState>({
     tagValue: "",
     selectedTags: [],
   });
-  const debouncedTagValue = useDebounce(tagValue, 500);
+  const debouncedTagValue = useDebounce(tagValue, DEBOUNCE_DELAY);
   const { data: posts, isLoading } = useService(getPostsByCategory,
-    [category, selectedTags, debouncedTagValue, window.location.origin]);
+    [category, selectedTags, debouncedTagValue]);
 
   const t = useTranslations("CategoryPage");
 
@@ -60,7 +61,7 @@ export const CategorySearch = ({ category }: CategorySearchProps) => {
         }
         {posts && posts.length === 0 &&
           <div className={styles.placeholder}>
-            <p className={typography.Heading3} data-testid="no-posts">{t("placeholder.message")}</p>
+            <p className={typography.heading3} data-testid="no-posts">{t("placeholder.message")}</p>
           </div>
         }
         {posts && posts.map(({ id, title_image, title, description, category }) => (
@@ -87,7 +88,7 @@ export const CategorySearch = ({ category }: CategorySearchProps) => {
           />
         </div>
         <div className={styles.categoryList}>
-          <h2 className={typography.Heading2}>{t("categories.title")}</h2>
+          <h2 className={typography.heading2}>{t("categories.title")}</h2>
           <div className={styles.categoryList}>
             {Object.entries(CATEGORIES).map(([categoryKey, { icon }]) => (
               <CategoryItem
@@ -99,7 +100,7 @@ export const CategorySearch = ({ category }: CategorySearchProps) => {
           </div>
         </div>
         <div className={styles.categoryList}>
-          <h2 className={typography.Heading2}>{t("tags.title")}</h2>
+          <h2 className={typography.heading2}>{t("tags.title")}</h2>
           <div className={styles.tagList}>
             {Object.values(Tags).map((tag) => (
               <div

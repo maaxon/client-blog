@@ -21,7 +21,7 @@ export async function BlogBanner() {
         <p className={`${typography.cap}`}>
           {t("featured-post")}
         </p>
-        <h1 className={`${typography.Heading2} ${styles.title}`}>
+        <h1 className={`${typography.heading2} ${styles.title}`}>
           {post.title}
         </h1>
         <p className={`${typography.body1} ${styles.metaInfo}`}>

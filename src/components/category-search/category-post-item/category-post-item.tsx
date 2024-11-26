@@ -25,7 +25,7 @@ export const CategoryPostItem = ({
     <div className={styles.content}>
       <p className={typography.cap}>{category}</p>
       <div className={styles.text}>
-        <h2 className={typography.Heading2}>{title}</h2>
+        <h2 className={typography.heading2}>{title}</h2>
         <p className={typography.body1}>{description}</p>
       </div>
     </div>

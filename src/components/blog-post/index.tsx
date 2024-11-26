@@ -34,7 +34,7 @@ export const BlogPost = async ({ id }: BlogPostProps) => {
             <div className={styles.profileText}>
               <NavLink
                 href={`/author/${post.author.id}`}
-                className={classNames(typography.Heading3, styles.authorName)}
+                className={classNames(typography.heading3, styles.authorName)}
               >
                 {post.author.name}
               </NavLink>
@@ -43,7 +43,7 @@ export const BlogPost = async ({ id }: BlogPostProps) => {
               </p>
             </div>
           </div>
-          <h1 className={typography.Heading1} data-testid="blog-post-title">{post.title}</h1>
+          <h1 className={typography.heading1} data-testid="blog-post-title">{post.title}</h1>
         </div>
         <div className={styles.category}>
           <div className={styles.categoryIconWrapper}>
@@ -54,7 +54,7 @@ export const BlogPost = async ({ id }: BlogPostProps) => {
               fill
             />
           </div>
-          <h4 className={typography.Heading4}>{post.category}</h4>
+          <h4 className={typography.heading4}>{post.category}</h4>
         </div>
       </div>
       <div className={styles.titleImageWrapper}>
@@ -69,7 +69,7 @@ export const BlogPost = async ({ id }: BlogPostProps) => {
         {post.content.map((block, index) => {
           if (block.type === BlockType.HEADING) {
             return (
-              <h2 key={index} className={typography.Heading2}>
+              <h2 key={index} className={typography.heading2}>
                 {block.text}
               </h2>
             );

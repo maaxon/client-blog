@@ -24,7 +24,7 @@ export const WhyWeStartedBanner = async () => {
       <div className={styles.content}>
         <p className={typography.cap}>{t("header")}</p>
         <div className={styles.text}>
-          <h1 className={typography.Heading1}>{t("title")}</h1>
+          <h1 className={typography.heading1}>{t("title")}</h1>
           <p className={`${typography.body01} ${styles.description}`}>
             {t("description")}
           </p>

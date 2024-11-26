@@ -23,7 +23,7 @@ export function PostList() {
       )}
       <section className={styles.pagination}>
         <button
-          className={`${typography.Heading4} ${styles.navButton}`}
+          className={`${typography.heading4} ${styles.navButton}`}
           disabled={isDisabledPrev()}
           onClick={prevPage}
           data-testid="prev"
@@ -31,7 +31,7 @@ export function PostList() {
           {t("prev")}
         </button>
         <button
-          className={`${typography.Heading4} ${styles.navButton}`}
+          className={`${typography.heading4} ${styles.navButton}`}
           disabled={isDisabledNext()}
           onClick={nextPage}
           data-testid="next"

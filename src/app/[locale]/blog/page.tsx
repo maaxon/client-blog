@@ -13,7 +13,7 @@ export default async function BlogPage() {
     <>
       <BlogBanner/>
       <main className={styles.container}>
-          <h2 className={classNames(typography.Heading1,styles.title)}>All posts</h2>
+          <h2 className={classNames(typography.heading1,styles.title)}>All posts</h2>
           <PostList/>
       </main>
       <CategorySelector/>

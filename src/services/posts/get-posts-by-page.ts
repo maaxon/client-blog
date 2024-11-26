@@ -1,5 +1,10 @@
-import { PostResponse } from "@/types";
+import { Blog } from "@/types";
 import { getBaseUrl } from "@/utils/get-base-url/get-base-url";
+
+interface PostResponse{
+  posts: Blog[],
+  hasMore: boolean
+}
 
 export const getPostsByPage = async (page: number) => {
   try {

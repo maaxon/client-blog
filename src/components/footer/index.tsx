@@ -28,7 +28,7 @@ export const Footer = () => {
     formState: { errors },
   } = useForm<FooterFormData>({
     resolver: zodResolver(schema),
-    mode: "onChange",
+    mode: "onBlur",
   });
 
   const onSubmit = (data: FooterFormData) => {
@@ -43,7 +43,7 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <section className={styles.topSection}>
-        <h4 className={`${typography.Heading4} ${styles.title}`}>{t("top-title")}</h4>
+        <h4 className={`${typography.heading4} ${styles.title}`}>{t("top-title")}</h4>
         <nav className={`${styles.navbar}`}>
           {FOOTER_LINK.map(({ href, title }, index) =>
             <NavLink key={index} href={t(href)}>
@@ -53,7 +53,7 @@ export const Footer = () => {
         </nav>
       </section>
       <section className={styles.middleSection}>
-        <h2 className={classNames(typography.Heading2, styles.title)}>
+        <h2 className={classNames(typography.heading2, styles.title)}>
           {t("middle-title")}
         </h2>
         <form className={styles.inputContainer} onSubmit={handleSubmit(onSubmit)}>

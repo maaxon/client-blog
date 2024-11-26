@@ -1,5 +1,6 @@
-export interface LinkProps {
+import { LinkProps } from "next/link";
+
+export interface NavLinkProps extends LinkProps {
   className?: string;
-  href: string;
   children?: React.ReactNode;
 }

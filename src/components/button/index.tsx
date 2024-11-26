@@ -1,7 +1,13 @@
+import { ButtonHTMLAttributes } from "react";
+
 import { Link } from "@/i18n/routing";
 
 import styles from "./button.module.scss";
-import { ButtonProps } from "./types";
+
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  href?: string;
+}
+
 
 export const Button = ({
   onClick,

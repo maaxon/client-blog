@@ -12,7 +12,7 @@ export const CategorySelector = async () => {
 
   return (
     <div className={styles.container}>
-      <h3 className={typography.Heading2}>{t("title")}</h3>
+      <h3 className={typography.heading2}>{t("title")}</h3>
       <div className={styles.content}>
         {Object.entries(CATEGORIES).map(([category, { icon }]) => (
           <Link
@@ -24,7 +24,7 @@ export const CategorySelector = async () => {
               <Image src={icon} alt={t(`${category}.icon.alt`)} />
             </div>
             <div className={styles.text}>
-              <h3 className={typography.Heading3}>{t(`${category}.title`)}</h3>
+              <h3 className={typography.heading3}>{t(`${category}.title`)}</h3>
               <p className={`${typography.body1} ${styles.description}`}>
                 {t(`${category}.description`)}
               </p>
