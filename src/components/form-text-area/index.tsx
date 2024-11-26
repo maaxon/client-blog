@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useRef } from "react";
 
 import typography from "@/styles/typography.module.scss";
 
@@ -17,7 +17,7 @@ export const FormTextArea = React.forwardRef<
 
 
   const handleOnChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-      onChange?.(e);
+    onChange?.(e);
   };
 
   return (
