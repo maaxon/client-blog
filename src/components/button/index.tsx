@@ -2,7 +2,7 @@ import { ButtonHTMLAttributes } from "react";
 
 import { Link } from "@/i18n/routing";
 
-import styles from "./button.module.scss";
+import styles from "./style.module.scss";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   href?: string;

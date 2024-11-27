@@ -5,17 +5,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 48px;
-  margin: 0 80px;
+  gap: $s-48;
+  margin: 0 $s-80;
 
   @media #{map-get($device, laptop)} {
-    margin: 0 40px;
-    gap: 32px;
+    margin: 0 $s-40;
+    gap: $s-32;
   }
 
   @media #{map-get($device, mobile-l)} {
-    margin: 0 16px;
-    gap: 24px;
+    margin: 0 $s-16;
+    gap: $s-24;
   }
 }
 
@@ -24,15 +24,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: $s-32;
 
   @media #{map-get($device, laptop)} {
-    gap: 24px;
+    gap: $s-24;
     flex-wrap: wrap;
   }
 
   @media #{map-get($device, mobile-l)} {
-    gap: 16px;
+    gap: $s-16;
     flex-wrap: wrap;
   }
 }
@@ -43,8 +43,8 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  gap: 20px;
-  padding: 40px 28px;
+  gap: $s-20;
+  padding: $s-40 $s-30;
   background-color: $light-gray;
   cursor: pointer;
   transition:
@@ -57,13 +57,13 @@
   }
 
   @media #{map-get($device, laptop)} {
-    padding: 32px 24px;
-    gap: 16px;
+    padding: $s-32 $s-24;
+    gap: $s-16;
   }
 
   @media #{map-get($device, mobile-l)} {
-    padding: 24px 20px;
-    gap: 12px;
+    padding: $s-24 $s-20;
+    gap: $s-12;
   }
 }
 
@@ -103,19 +103,19 @@
   }
 
   @media #{map-get($device, mobile-l)} {
-    font-size: 12px;
+    font-size: $fs-12;
   }
 }
 
 .socials {
   display: flex;
-  gap: 16px;
+  gap: $s-16;
 
   @media #{map-get($device, laptop)} {
-    gap: 12px;
+    gap: $s-12;
   }
 
   @media #{map-get($device, mobile-l)} {
-    gap: 8px;
+    gap: $s-8;
   }
 }

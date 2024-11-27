@@ -5,22 +5,22 @@
   align-items: flex-start;
   justify-content: center;
   gap: 148px;
-  margin: 0 80px;
+  margin: 0 $s-80;
 
   @media #{map-get($device, large-desktop)} {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 60px;
-    margin: 0 20px;
+    gap: $s-60;
+    margin: 0 $s-20;
   }
 
   @media #{map-get($device, mobile-l)} {
-    gap: 40px;
-    margin: 0 16px;
+    gap: $s-40;
+    margin: 0 $s-16;
   }
 
   @media #{map-get($device, mobile-s)} {
-    margin: 0 8px;
+    margin: 0 $s-8;
   }
 }
 
@@ -44,11 +44,11 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 58px;
+  gap: $s-60;
 
   @media #{map-get($device, large-desktop)} {
     width: 100%;
-    gap: 40px;
+    gap: $s-40;
   }
 }
 
@@ -69,7 +69,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 40px;
+  gap: $s-40;
 }
 
 .categoryList {
@@ -78,7 +78,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 24px;
+  gap: $s-24;
 
   @media #{map-get($device, large-desktop)} {
     align-items: center;
@@ -87,7 +87,7 @@
 
 .loaderContainer {
   width: 100%;
-  height: 200px;
+  height: $s-200;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,14 +98,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: $s-10;
 }
 
 .tagItem {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 20px;
+  padding: $s-10 $s-20;
   border: 2px solid $medium-gray;
   border-radius: 25px;
   background-color: inherit;
@@ -144,13 +144,13 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 40px 20px;
+  padding: $s-40 $s-20;
   height: 100%;
   opacity: 0;
   animation: fadeIn 0.5s forwards;
 
   @media #{map-get($device, mobile-l)} {
-    padding: 20px 10px;
+    padding: $s-20 $s-10;
   }
 }
 

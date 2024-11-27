@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { NavLink } from "@/components/nav-link";
 import typography from "@/styles/typography.module.scss";
 
-import styles from "./home-about-us-banner.module.scss";
+import styles from "./style.module.scss";
 
 export const HomeAboutUsBanner = async () => {
   const t = await getTranslations("AboutUsBanner");

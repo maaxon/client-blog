@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
-import { PORTAL_ERROR_MSG } from "./constants";
-import { ContainerOptions, PortalProps } from "./portal.type";
+import { PORTAL_ERROR_MSG } from "./config";
+import { ContainerOptions, PortalProps } from "./types";
 
 export const Portal = ({ id, children }: PortalProps) => {
   const [container, setContainer] = useState<HTMLElement | null>(null);

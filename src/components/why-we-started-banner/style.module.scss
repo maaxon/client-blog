@@ -4,17 +4,17 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  margin: 0 80px;
+  margin: 0 $s-80;
   position: relative;
 
   @media #{map-get($device, laptop)} {
     flex-direction: column;
     align-items: center;
-    margin: 0 40px;
+    margin: 0 $s-40;
   }
 
   @media #{map-get($device, mobile-l)} {
-    margin: 0 16px;
+    margin: 0 $s-16;
   }
 }
 
@@ -44,14 +44,14 @@
 
 .content {
   position: absolute;
-  right: 80px;
+  right: $s-80;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 24px;
+  gap: $s-24;
   background-color: white;
-  padding: 80px;
+  padding: $s-80;
   max-width: 45%;
 
   @media #{map-get($device, laptop)} {
@@ -59,12 +59,12 @@
     right: 0;
     bottom: 160px;
     max-width: 80%;
-    padding: 40px;
+    padding: $s-40;
   }
 
   @media #{map-get($device, mobile-l)} {
-    bottom: 60px;
-    padding: 24px;
+    bottom: $s-60;
+    padding: $s-24;
   }
 }
 
@@ -73,14 +73,14 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 16px;
+  gap: $s-16;
 
   @media #{map-get($device, laptop)} {
-    gap: 12px;
+    gap: $s-12;
   }
 
   @media #{map-get($device, mobile-l)} {
-    gap: 8px;
+    gap: $s-8;
   }
 }
 

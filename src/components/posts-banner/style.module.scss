@@ -3,18 +3,18 @@
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 32px;
-  margin: 0 80px;
+  gap: $s-32;
+  margin: 0 $s-80;
 
   @media #{map-get($device, tablet)} {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin: 0 40px;
+    gap: $s-16;
+    margin: 0 $s-40;
   }
 
   @media #{map-get($device, mobile-l)} {
-    margin: 0 24px;
+    margin: 0 $s-24;
   }
 }
 
@@ -25,14 +25,14 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 32px;
+  gap: $s-32;
   flex-grow: 1;
 }
 
 .featuredPost {
   width: 100%;
-  padding: 32px;
-  gap: 32px;
+  padding: $s-32;
+  gap: $s-32;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -41,8 +41,8 @@
   flex-grow: 1;
 
   @media #{map-get($device, mobile-l)} {
-    padding: 24px;
-    gap: 16px;
+    padding: $s-24;
+    gap: $s-16;
   }
 }
 
@@ -50,11 +50,11 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: $s-24;
   flex-grow: 1;
 
   @media #{map-get($device, mobile-l)} {
-    gap: 16px;
+    gap: $s-16;
   }
 }
 
@@ -89,10 +89,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: $s-16;
 
   @media #{map-get($device, mobile-l)} {
-    gap: 12px;
+    gap: $s-12;
   }
 }
 
@@ -129,8 +129,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 32px;
-  gap: 8px;
+  padding: $s-32;
+  gap: $s-8;
   cursor: pointer;
   transition:
           background-color 0.3s ease,
@@ -142,10 +142,10 @@
   }
 
   @media #{map-get($device, mobile-l)} {
-    padding: 24px;
+    padding: $s-24;
   }
 
   @media #{map-get($device, mobile-m)} {
-    padding: 16px;
+    padding: $s-16;
   }
 }

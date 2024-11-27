@@ -7,7 +7,7 @@ import { getFeaturedPost } from "@/services/posts/get-featured-post";
 import typography from "@/styles/typography.module.scss";
 import { formattedDate } from "@/utils/format-date";
 
-import styles from "./blog-banner.module.scss";
+import styles from "./style.module.scss";
 
 export const BlogBanner = async () => {
   const t = await getTranslations("FeaturePost");
@@ -40,7 +40,7 @@ export const BlogBanner = async () => {
         </Button>
       </article>
       <section className={styles.imageContainer}>
-        <Image className={styles.image} src={post.title_image} alt="title_image" fill />
+        <Image className={styles.image} src={post.title_image} alt={post.title} fill />
       </section>
     </section>
   );

@@ -7,7 +7,7 @@ import { TESTIMONIALS } from "@/constants/testimonials";
 import { useSlider } from "@/hooks/use-slider/use-slider";
 import typography from "@/styles/typography.module.scss";
 
-import styles from "./testimonials-banner.module.scss";
+import styles from "./style.module.scss";
 
 const NEXT_SYMBOL = String.fromCharCode(8594);
 const PREV_SYMBOL = String.fromCharCode(8592);

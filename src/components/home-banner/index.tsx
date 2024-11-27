@@ -6,7 +6,7 @@ import { getFeaturedPost } from "@/services/posts/get-featured-post";
 import typography from "@/styles/typography.module.scss";
 import { formattedDate } from "@/utils/format-date";
 
-import styles from "./home-banner.module.scss";
+import styles from "./style.module.scss";
 
 export const HomeBanner = async () => {
   const t = await getTranslations("FeaturePost");

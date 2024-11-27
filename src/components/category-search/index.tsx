@@ -15,8 +15,8 @@ import typography from "@/styles/typography.module.scss";
 
 import { CategoryItem } from "./category-item/category-item";
 import { CategoryPostItem } from "./category-post-item/category-post-item";
-import styles from "./category-search.module.scss";
-import { CategorySearchProps, CategorySearchState } from "./category-search.type";
+import styles from "./style.module.scss";
+import { CategorySearchProps, CategorySearchState } from "./types";
 import { DEBOUNCE_DELAY } from "./config";
 
 export const CategorySearch = ({ category }: CategorySearchProps) => {

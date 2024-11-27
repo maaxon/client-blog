@@ -9,8 +9,8 @@ import InstagramIcon from "@public/icons/social-networks/instagram-icon.svg";
 import LinkedInIcon from "@public/icons/social-networks/linked-in-icon.svg";
 import TwitterIcon from "@public/icons/social-networks/twitter-icon.svg";
 
-import styles from "./author-banner.module.scss";
-import { AuthorBannerProps } from "./author-banner.type";
+import styles from "./style.module.scss";
+import { AuthorBannerProps } from "./types";
 
 export const AuthorBanner = async ({ id }: AuthorBannerProps) => {
   const author = await getAuthorById(id);

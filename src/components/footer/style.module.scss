@@ -5,22 +5,22 @@
   padding: 60px 80px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: $s-30;
 
   @media #{map-get($device, laptop)} {
-    padding: 40px 60px;
+    padding: $s-40 $s-60;
   }
 
   @media #{map-get($device, tablet)} {
-    padding: 32px 40px;
+    padding: $s-32 $s-40;
   }
 
   @media #{map-get($device, mobile-l)} {
-    padding: 24px 20px;
+    padding: $s-24 $s-20;
   }
 
   @media #{map-get($device, mobile-s)} {
-    padding: 16px 10px;
+    padding: $s-16 $s-10;
   }
 }
 
@@ -36,7 +36,7 @@
   .navbar {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: $s-24;
   }
 
   @media #{map-get($device, laptop)} {
@@ -46,7 +46,7 @@
 
 .middleSection {
   background-color: $dark-blue;
-  padding: 80px 60px;
+  padding: $s-80 $s-60;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -56,27 +56,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
-    gap: 32px;
+    padding: $s-40 $s-20;
+    gap: $s-32;
   }
 
   @media #{map-get($device, mobile-l)} {
-    padding: 30px 10px;
-    gap: 16px;
+    padding: $s-30 $s-10;
+    gap: $s-16;
   }
 
   .inputContainer{
     display: flex;
-    gap: 20px;
+    gap: $s-20;
     align-items: center;
 
     @media #{map-get($device, laptop)} {
-      gap: 36px;
+      gap: $s-34;
     }
 
     @media #{map-get($device, mobile-l)} {
       flex-direction: column;
-      gap: 12px;
+      gap: $s-12;
     }
   }
 
@@ -90,7 +90,7 @@
     }
 
     @media #{map-get($device, mobile-l)} {
-      font-size: 1.5rem;
+      font-size: $fs-24;
     }
   }
 
@@ -115,18 +115,18 @@
 
   .socialNetworkContainer {
     display: flex;
-    gap: 26px;
+    gap: $s-24;
   }
 }
 
 .error {
   color: red;
-  font-size: 12px;
+  font-size: $fs-12;
   position: absolute;
   margin-top: 100px;
 
   @media #{map-get($device, mobile-l)} {
-    font-size: 10px;
+    font-size: $fs-10;
     position: relative;
     margin-top: 0;
   }

@@ -3,8 +3,8 @@ import cn from "classnames";
 import { CATEGORIES } from "@/constants/categories";
 import typography from "@/styles/typography.module.scss";
 
-import styles from "./category-banner.module.scss";
-import { CategoryBannerProps } from "./category-banner.type";
+import styles from "./style.module.scss";
+import { CategoryBannerProps } from "./types";
 
 export const CategoryBanner = ({ category }: CategoryBannerProps) => (
   <div className={styles.container}>

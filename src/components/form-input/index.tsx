@@ -2,8 +2,8 @@ import React, { forwardRef } from "react";
 
 import typography from "@/styles/typography.module.scss";
 
-import styles from "./form-input.module.scss";
-import { FormInputProps } from "./form-input.type";
+import styles from "./style.module.scss";
+import { FormInputProps } from "./types";
 
 export const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
   ({ className, onChange, onBlur, value, placeholder, type, ...rest }, ref) => (

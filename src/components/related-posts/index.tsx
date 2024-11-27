@@ -6,8 +6,8 @@ import { getRelatedPosts } from "@/services/posts/get-related-posts";
 import typography from "@/styles/typography.module.scss";
 import { formattedDate } from "@/utils/format-date";
 
-import styles from "./related-posts.module.scss";
-import { RelatedPostsProps } from "./related-posts.type";
+import styles from "./style.module.scss";
+import { RelatedPostsProps } from "./types";
 
 export const RelatedPosts = async ({ id }: RelatedPostsProps) => {
   const t = await getTranslations("PostsBanner");

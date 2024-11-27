@@ -5,7 +5,7 @@ import { CATEGORIES } from "@/constants/categories";
 import { Link } from "@/i18n/routing";
 import typography from "@/styles/typography.module.scss";
 
-import styles from "./category-selector.module.scss";
+import styles from "./style.module.scss";
 
 export const CategorySelector = async () => {
   const t = await getTranslations("CategorySelector");

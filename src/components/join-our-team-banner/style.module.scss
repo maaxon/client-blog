@@ -6,19 +6,19 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 40px 0;
+  padding: $s-40 0;
 
   @media #{map-get($device, tablet)} {
-    padding: 30px 0;
+    padding: $s-30 0;
   }
 
   @media #{map-get($device, mobile-l)} {
-    padding: 20px 0;
+    padding: $s-20 0;
   }
 }
 
 .title {
-  padding: 16px;
+  padding: $s-16;
   width: 400px;
   text-align: center;
 
@@ -53,17 +53,17 @@
 }
 
 .button {
-  margin: 32px;
+  margin: $s-32;
 
   @media #{map-get($device, tablet)} {
-    margin: 24px;
+    margin: $s-24;
   }
 
   @media #{map-get($device, mobile-l)} {
-    margin: 20px;
+    margin: $s-20;
   }
 
   @media #{map-get($device, mobile-s)} {
-    margin: 16px;
+    margin: $s-16;
   }
 }

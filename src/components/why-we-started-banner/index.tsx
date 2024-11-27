@@ -5,7 +5,7 @@ import { Button } from "@/components/button/";
 import typography from "@/styles/typography.module.scss";
 import BannerImage from "@public/images/why-we-started-image.png";
 
-import styles from "./why-we-started-banner.module.scss";
+import styles from "./style.module.scss";
 
 export const WhyWeStartedBanner = async () => {
   const t = await getTranslations("WhyWeStartedBanner");

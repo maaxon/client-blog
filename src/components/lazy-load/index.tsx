@@ -2,8 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 
-import styles from "./lazy-load.module.scss";
-import { LazyLoadProps } from "./lazy-load.type";
+import styles from "./style.module.scss";
+import { LazyLoadProps } from "./types";
 
 export const LazyLoad = ({ children, id }: LazyLoadProps) => {
   const [isVisible, setIsVisible] = useState(false);

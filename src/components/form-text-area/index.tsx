@@ -4,8 +4,8 @@ import React, { useRef } from "react";
 
 import typography from "@/styles/typography.module.scss";
 
-import styles from "./form-text-area.module.scss";
-import { FormTextAreaProps } from "./form-text-area.type";
+import styles from "./style.module.scss";
+import { FormTextAreaProps } from "./types";
 
 export const FormTextArea = React.forwardRef<
   HTMLTextAreaElement,

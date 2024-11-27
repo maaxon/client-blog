@@ -1,23 +1,24 @@
 @import "@/styles/variables";
 
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 64px;
-  margin: 0 80px;
+  gap: $s-64;
+  margin: 0 $s-80;
 
   @media #{map-get($device, laptop)} {
-    margin: 0 60px;
+    margin: 0 $s-60;
   }
 
   @media #{map-get($device, tablet)} {
-    margin: 0 40px;
+    margin: 0 $s-40;
   }
 
   @media #{map-get($device, mobile-l)} {
-    margin: 0 20px;
+    margin: 0 $s-20;
   }
 }
 
@@ -26,11 +27,11 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 34px;
+  gap: $s-34;
   max-width: 800px;
 
   @media #{map-get($device, mobile-l)} {
-    gap: 24px;
+    gap: $s-24;
   }
 }
 
@@ -39,14 +40,14 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 24px;
+  gap: $s-24;
 
   @media #{map-get($device, tablet)} {
-    gap: 20px;
+    gap: $s-20;
   }
 
   @media #{map-get($device, mobile-l)} {
-    gap: 16px;
+    gap: $s-16;
   }
 }
 
@@ -54,10 +55,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 16px;
+  gap: $s-16;
 
   @media #{map-get($device, mobile-l)} {
-    gap: 12px;
+    gap: $s-12;
   }
 }
 
@@ -97,7 +98,7 @@
 .category {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: $s-8;
   text-transform: capitalize;
 
   @media #{map-get($device, mobile-l)} {
@@ -135,14 +136,14 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 24px;
+  gap: $s-24;
   max-width: 900px;
 
   @media #{map-get($device, tablet)} {
-    gap: 20px;
+    gap: $s-20;
   }
 
   @media #{map-get($device, mobile-l)} {
-    gap: 16px;
+    gap: $s-16;
   }
 }

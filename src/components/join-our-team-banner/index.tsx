@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/button/";
 import typography from "@/styles/typography.module.scss";
 
-import styles from "./join-our-team-banner.module.scss";
+import styles from "./style.module.scss";
 
 export const JoinOurTeamBanner = async () => {
   const t = await getTranslations("JoinOurTeam");

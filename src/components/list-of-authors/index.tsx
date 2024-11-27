@@ -9,7 +9,7 @@ import InstagramIcon from "@public/icons/social-networks/instagram-icon.svg";
 import LinkedInIcon from "@public/icons/social-networks/linked-in-icon.svg";
 import TwitterIcon from "@public/icons/social-networks/twitter-icon.svg";
 
-import styles from "./list-of-authors.module.scss";
+import styles from "./style.module.scss";
 
 export const ListOfAuthors = async () => {
   const t = await getTranslations("ListOfAuthors");

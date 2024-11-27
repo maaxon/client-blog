@@ -15,7 +15,7 @@ import { Link } from "@/i18n/routing";
 import typography from "@/styles/typography.module.scss";
 
 import { Video } from "./video/video";
-import styles from "./header.module.scss";
+import styles from "./style.module.scss";
 
 export const Header = () => {
   const { isModalOpen, handleModalOpen, handleModalClose } = useModalOpen();

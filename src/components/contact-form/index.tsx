@@ -12,7 +12,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { FormTextArea } from "@maaxxon/client-blog-ui-kit";
 import { FormInput } from "@maaxxon/client-blog-ui-kit";
 
-import styles from "./contact-form.module.scss";
+import styles from "./style.module.scss";
 import { schema } from "./form-schema";
 
 export const ContactForm = () => {

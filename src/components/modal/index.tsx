@@ -5,8 +5,8 @@ import { useEffect, useLayoutEffect, useRef } from "react";
 import { createContainer, Portal } from "@/components/portal";
 
 import { MODAL_CONTAINER_ID } from "./config";
-import styles from "./modal.module.scss";
-import { ModalProps } from "./modal.type";
+import styles from "./style.module.scss";
+import { ModalProps } from "./types";
 
 export const Modal = ({ onClose, children }: ModalProps) => {
   const rootRef = useRef<HTMLDivElement>(null);

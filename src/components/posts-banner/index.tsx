@@ -9,7 +9,7 @@ import { getFirstFourPosts } from "@/services/posts/get-first-four-posts";
 import typography from "@/styles/typography.module.scss";
 import { formattedDate } from "@/utils/format-date";
 
-import styles from "./posts-banner.module.scss";
+import styles from "./style.module.scss";
 
 export const PostsBanner = async () => {
   const t = await getTranslations("PostsBanner");

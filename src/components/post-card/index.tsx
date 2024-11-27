@@ -4,8 +4,8 @@ import cn from "classnames";
 import { Link } from "@/i18n/routing";
 import typography from "@/styles/typography.module.scss";
 
-import styles from "./post-card.module.scss";
-import { PostCardProps } from "./post-card.type";
+import styles from "./style.module.scss";
+import { PostCardProps } from "./types";
 
 export function PostCard({ id, title, description, image, category }: PostCardProps) {
   return (

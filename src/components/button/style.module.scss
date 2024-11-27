@@ -3,21 +3,21 @@
 .button {
   background-color: $yellow;
   color: $black;
-  padding: 16px 48px;
+  padding: $s-16 $s-48;
 
-  font-size: 18px;
+  font-size: $s-18;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px;
+  line-height: $s-24;
 
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   transition:
-    background-color 0.3s ease,
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+          background-color 0.3s ease,
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   &:hover {

@@ -5,16 +5,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 48px;
-  margin: 0 80px;
+  gap: $s-32;
+  margin: 0 $s-80;
 
   @media #{map-get($device, tablet)} {
-    gap: 32px;
-    margin: 0 40px;
+    gap: $s-32;
+    margin: 0 $s-40;
   }
 
   @media #{map-get($device, mobile-l)} {
-    margin: 0 16px;
+    margin: 0 $s-16;
   }
 }
 
@@ -23,11 +23,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: $s-32;
 
   @media #{map-get($device, laptop)} {
     flex-wrap: wrap;
-    gap: 16px;
+    gap: $s-16;
   }
 }
 
@@ -36,14 +36,14 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 32px;
-  gap: 16px;
+  padding: $s-32;
+  gap: $s-16;
   flex: 1;
   cursor: pointer;
   border: 1px solid rgba($medium-gray, 0.3);
   transition:
-    background-color 0.3s ease,
-    transform 0.3s ease;
+          background-color 0.3s ease,
+          transform 0.3s ease;
 
   &:hover {
     background-color: $yellow;
@@ -63,23 +63,23 @@
   }
 
   @media #{map-get($device, mobile-l)} {
-    padding: 24px;
+    padding: $s-24;
   }
 
   @media #{map-get($device, mobile-m)} {
-    padding: 16px;
-    gap: 12px;
+    padding: $s-16;
+    gap: $s-12;
   }
 
   @media #{map-get($device, mobile-s)} {
-    padding: 12px;
-    gap: 8px;
+    padding: $s-12;
+    gap: $s-8;
   }
 }
 
 .iconWrapper {
-  width: 48px;
-  height: 48px;
+  width: $s-48;
+  height: $s-48;
   display: flex;
   align-items: center;
   justify-content: center;

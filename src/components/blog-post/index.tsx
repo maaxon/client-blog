@@ -9,8 +9,8 @@ import { getPostById } from "@/services/posts/get-post-by-id";
 import typography from "@/styles/typography.module.scss";
 import { formattedDate } from "@/utils/format-date";
 
-import styles from "./blog-post.module.scss";
-import { BlogPostProps } from "./blog-post.types";
+import styles from "./style.module.scss";
+import { BlogPostProps } from "./types";
 
 export const BlogPost = async ({ id }: BlogPostProps) => {
   const post = await getPostById(id);

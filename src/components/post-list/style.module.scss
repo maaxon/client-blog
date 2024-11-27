@@ -1,15 +1,17 @@
+@import "@/styles/variables";
+
 .container{
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin: 80px 0;
+  gap: $s-20;
+  margin: $s-80 0;
 
 }
 
 .pagination{
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: $s-20;
 }
 
 .loaderContainer{

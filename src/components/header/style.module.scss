@@ -7,11 +7,11 @@
   height: 80px;
   background-color: $black;
   color: $light;
-  padding: 0 20px;
+  padding: 0 $s-30;
 
   .button {
     background-color: $background-light;
-    margin: 0 31px;
+    margin: 0 $s-30;
 
     &:hover {
       background-color: $light-gray;
@@ -32,7 +32,7 @@
 
   .languages{
     display: flex;
-    gap: 10px;
+    gap: $s-10;
     text-transform: capitalize;
 
     span:hover, .active{
@@ -48,7 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 24px;
+    gap: $s-24;
     flex: 1;
 
     @media #{map-get($device, laptop)} {
@@ -59,7 +59,7 @@
       right: 0;
       background-color: $black;
       width: 100%;
-      padding: 20px;
+      padding: $s-20;
       z-index: 10;
 
       &.open {

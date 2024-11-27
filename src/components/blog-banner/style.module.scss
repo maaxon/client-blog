@@ -1,45 +1,46 @@
 @import "@/styles/variables";
 
-.container{
+
+
+.container {
   background-color: $lavender;
-  padding: 80px;
+  padding: $s-80;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 200px;
+  grid-column-gap: $s-200;
 
   @media #{map-get($device, laptop)} {
-    padding: 30px;
-    grid-column-gap: 80px;
+    padding: $s-30;
+    grid-column-gap: $s-80;
   }
 
   @media #{map-get($device, mobile-l)} {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: $s-10;
   }
 
-  .content{
+  .content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     @media #{map-get($device, mobile-l)} {
-      gap: 10px;
+      gap: $s-10;
     }
 
-    .author{
+    .author {
       color: $purple;
     }
 
-    .title{
-      padding: 8px 0;
+    .title {
+      padding: $s-8 0;
     }
 
-    .metaInfo{
+    .metaInfo {
       color: $dark-gray;
     }
 
-
-    .button{
+    .button {
       max-width: 260px;
     }
   }
@@ -57,18 +58,6 @@
       object-position: center;
     }
   }
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 

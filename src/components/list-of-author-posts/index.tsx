@@ -5,8 +5,8 @@ import { PostCard } from "@/components/post-card";
 import { getPostsByAuthorId } from "@/services/posts/get-posts-by-author-id";
 import typography from "@/styles/typography.module.scss";
 
-import styles from "./list-of-author-posts.module.scss";
-import { ListOfAuthorPostsProps } from "./list-of-author-posts.type";
+import styles from "./style.module.scss";
+import { ListOfAuthorPostsProps } from "./types";
 
 export const ListOfAuthorPosts = async ({ id }: ListOfAuthorPostsProps) => {
   const t = await getTranslations("AuthorPosts");

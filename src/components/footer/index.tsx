@@ -13,9 +13,9 @@ import { sendEmail } from "@/utils/send-email/sendEmail";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormInput } from "@maaxxon/client-blog-ui-kit";
 
-import { EmailData } from "./footer.config";
-import styles from "./footer.module.scss";
-import { FooterFormData } from "./footer.type";
+import { EmailData } from "./config";
+import styles from "./style.module.scss";
+import { FooterFormData } from "./types";
 import { schema } from "./form-schema";
 
 export const Footer = () => {

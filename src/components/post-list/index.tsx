@@ -7,7 +7,7 @@ import { PostCard } from "@/components/post-card";
 import { usePagePosts } from "@/hooks/use-page-posts/use-page-posts";
 import typography from "@/styles/typography.module.scss";
 
-import styles from "./post-list.module.scss";
+import styles from "./style.module.scss";
 
 export const PostList = () => {
   const { posts, isLoading, nextPage, prevPage, isDisabledNext, isDisabledPrev } = usePagePosts();
