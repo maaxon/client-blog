@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
+import { Banners } from "@/components/featured-in-banner/config";
 import typography from "@/styles/typography.module.scss";
 
 import styles from "./style.module.scss";
-import { Banners } from "@/components/featured-in-banner/config";
 
 export const FeaturedInBanner = async () => {
   const t = await getTranslations("FeaturedIn");

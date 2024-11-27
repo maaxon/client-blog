@@ -14,9 +14,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { FormInput } from "@maaxxon/client-blog-ui-kit";
 
 import { EmailData } from "./config";
+import { schema } from "./form-schema";
 import styles from "./style.module.scss";
 import { FooterFormData } from "./types";
-import { schema } from "./form-schema";
 
 export const Footer = () => {
   const t = useTranslations("Footer");

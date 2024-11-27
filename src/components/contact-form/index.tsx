@@ -12,8 +12,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { FormTextArea } from "@maaxxon/client-blog-ui-kit";
 import { FormInput } from "@maaxxon/client-blog-ui-kit";
 
-import styles from "./style.module.scss";
 import { schema } from "./form-schema";
+import styles from "./style.module.scss";
 
 export const ContactForm = () => {
   const t = useTranslations("ContactUsPage");

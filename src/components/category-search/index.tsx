@@ -15,9 +15,9 @@ import typography from "@/styles/typography.module.scss";
 
 import { CategoryItem } from "./category-item/category-item";
 import { CategoryPostItem } from "./category-post-item/category-post-item";
+import { DEBOUNCE_DELAY } from "./config";
 import styles from "./style.module.scss";
 import { CategorySearchProps, CategorySearchState } from "./types";
-import { DEBOUNCE_DELAY } from "./config";
 
 export const CategorySearch = ({ category }: CategorySearchProps) => {
   const [{ tagValue, selectedTags }, setState] = useState<CategorySearchState>({
